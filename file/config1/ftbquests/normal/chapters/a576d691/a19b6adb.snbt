@@ -1,0 +1,33 @@
+{
+	x: -9.0d,
+	y: -27.5d,
+	description: "使用奥利哈刚放置1级血之祭坛合成",
+	dependencies: [
+		"9527ff6a",
+		"f39ddea6"
+	],
+	tasks: [{
+		uid: "3c9fb80c",
+		type: "item",
+		items: [{
+			tag: {
+				orb: "bloodmagic:weak"
+			},
+			id: "bloodmagic:blood_orb"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "243d49e7",
+		type: "command",
+		command: "/eco give @p 120"
+	},
+	{
+		uid: "f29dc59f",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

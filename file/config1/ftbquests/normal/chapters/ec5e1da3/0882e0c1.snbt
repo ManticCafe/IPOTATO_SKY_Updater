@@ -1,0 +1,25 @@
+{
+	x: 6.75d,
+	y: -12.0d,
+	shape: "diamond",
+	hide_dependency_lines: 1b,
+	dependencies: [
+		"40fc6600"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "86cc167e",
+		type: "item",
+		items: [{
+			item: "modularmachinery:internal_combustion_engine_factory_controller"
+		}]
+	}],
+	rewards: [{
+		uid: "563793a6",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

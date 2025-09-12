@@ -1,0 +1,15 @@
+{
+	icon: "minecraft:structure_void",
+	x: 0.5d,
+	y: -1.5d,
+	shape: "square",
+	custom_click: "http://985.so/adwku",
+	dependencies: [
+		"f178f9d4"
+	],
+	tasks: [{
+		uid: "e69e7a39",
+		type: "checkmark",
+		title: "官方网站"
+	}]
+}

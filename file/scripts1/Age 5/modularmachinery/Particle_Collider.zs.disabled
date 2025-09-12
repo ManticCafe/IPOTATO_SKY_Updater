@@ -1,0 +1,102 @@
+import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.item.IIngredient;
+import crafttweaker.data.IData;
+import crafttweaker.world.IWorld;
+import mods.zenutils.ICatenationBuilder;
+import crafttweaker.util.Math;
+import native.java.util.Random;
+import mods.modularmachinery.MMEvents;
+import mods.modularmachinery.FactoryRecipeThread;
+import mods.modularmachinery.FactoryRecipeTickEvent;
+import mods.modularmachinery.FactoryRecipeFinishEvent;
+import mods.modularmachinery.RecipeCheckEvent;
+import mods.modularmachinery.ControllerGUIRenderEvent;
+import mods.modularmachinery.IMachineController;
+import mods.modularmachinery.RecipeModifierBuilder;
+import mods.modularmachinery.ActiveMachineRecipe;
+import mods.modularmachinery.RecipePrimer;
+import mods.modularmachinery.RecipeBuilder;
+import mods.modularmachinery.RecipeAdapterBuilder;
+import mods.modularmachinery.MachineModifier;
+import mods.modularmachinery.MachineStructureFormedEvent;
+import mods.modularmachinery.RecipeTickEvent;
+import mods.modularmachinery.Sync;
+
+function formatNumber(value as long) as string {
+    if (value < 1000) {
+        return "" + value;
+    } else if (value < 1000000) {
+        return "" + (value / 1000) + "K";
+    } else if (value < 1000000000) {
+        return "" + ((value / 1000) as float / 1000) + "M";
+    } else if (value < 1000000000000) {
+        return "" + ((value / 1000000) as float / 1000) + "G";
+    } else if (value < 1000000000000000) {
+        return "" + ((value / 1000000000) as float / 1000) + "T";
+    } else if (value < 1000000000000000000) {
+        return "" + ((value / 1000000000000) as float / 1000) + "P";
+    } else {
+        return "" + ((value / 1000000000000000) as float / 1000) + "E";
+    }
+}
+
+MachineModifier.setMaxThreads("Particle_Collider",0);
+MachineModifier.addCoreThread("Particle_Collider",FactoryRecipeThread.createCoreThread("能量输入"));
+MachineModifier.addCoreThread("Particle_Collider",FactoryRecipeThread.createCoreThread("粒子加速"));
+MachineModifier.addCoreThread("Particle_Collider",FactoryRecipeThread.createCoreThread("粒子输入"));
+MachineModifier.addCoreThread("Particle_Collider",FactoryRecipeThread.createCoreThread("配方执行"));
+MachineModifier.addCoreThread("Particle_Collider",FactoryRecipeThread.createCoreThread("冷却液输入"));
+MachineModifier.addCoreThread("Particle_Collider",FactoryRecipeThread.createCoreThread("热冷却液输出"));
+MachineModifier.addCoreThread("Particle_Collider",FactoryRecipeThread.createCoreThread("配方执行"));
+MachineModifier.addCoreThread("Particle_Collider",FactoryRecipeThread.createCoreThread("真空环境维持"));
+
+val particle_speed as long = 0;//注册一个粒子的初始速度
+val particle_speed_max as long = 74948114;//最大粒子速度
+val Heat as long = 298;//初始温度
+val Lowest_Calories as int = -273;//最低温度
+var max_heat as long = 27670116110563;//最高温度
+var coolant_input_speed as long = 16384;//冷却液输入速度
+var coolant_out_speed as long = 16384;//冷却液输出速度
+var maxenergy as long = 536870912;//最大内置能量
+var energy_input_speed as long = 8192;//注册一个能量输入速度的变量
+
+//能量输入
+RecipeBuilder.newBuilder("energy_input","Particle_Collider",1)
+             .addEnergyPerTickInput(energy_input_speed)
+             .addPreCheckHandler(function(event as RecipeCheckEvent){
+                val data = event.controller.customData;
+                var energy = isNull(data.energy) ? 0 as long : (data.energy as long);
+                if((energy + energy_input_speed) > maxenergy){
+                    event.setFailed("电量存储已达极限！");
+                }
+            })
+            .addFactoryFinishHandler(function(event as FactoryRecipeFinishEvent){
+                val data = event.controller.customData;
+                var dData = D(data);
+                val map = data.asMap();
+                var energy = dData.getLong("energy",0);
+                map["energy"] = energy + energy_input_speed;
+                event.controller.customData = data;
+            })
+            .setThreadName("能量输入")
+            .build();
+
+MMEvents.onControllerGUIRender("EC", function(event as ControllerGUIRenderEvent) {
+    val ctrl = event.controller;
+    val data = ctrl.customData;
+    var energy = isNull(data) || isNull(data.energy) ? 0 as long : (data.energy as long);
+    var info as string [] = [];
+    info += "§9<<<<<<<<——————§n粒子对撞机数据面板——————§r>>>>>>>>";
+    info += "能量: " + formatNumber(energy) + "/" + formatNumber(maxenergy);
+    info += "粒子速度: " + formatNumber(particle_speed) + "/" + formatNumber(particle_speed_max);
+    
+    if (Heat > 18446744073709) {
+        info += "热量: " + formatNumber(Heat) + "开" + "§c§k---§l§r警告!!!:温度过热§k---";
+    } else {
+        info += "热量: " + formatNumber(Heat) + "开";
+    }
+    
+    info += "§9<<<<<<<<————————————————————————————————>>>>>>>>";
+    event.extraInfo = info;
+});

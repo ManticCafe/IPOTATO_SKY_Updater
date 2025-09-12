@@ -1,0 +1,19 @@
+{
+	x: -8.5d,
+	y: 10.5d,
+	dependencies: [
+		"b5b171dd"
+	],
+	tasks: [{
+		uid: "9451d4fa",
+		type: "item",
+		items: [{
+			item: "modularmachinery:auto_mortar_controller"
+		}]
+	}],
+	rewards: [{
+		uid: "8cde699f",
+		type: "command",
+		command: "/eco give @p 250"
+	}]
+}

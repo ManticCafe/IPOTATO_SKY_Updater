@@ -1,0 +1,12 @@
+{
+	x: -6.5d,
+	y: 2.5d,
+	shape: "diamond",
+	tasks: [{
+		uid: "990fbc8d",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:reactor"
+		}]
+	}]
+}

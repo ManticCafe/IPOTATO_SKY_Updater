@@ -1,0 +1,15 @@
+{
+	x: -8.5d,
+	y: 3.0d,
+	dependencies: [
+		"e6aac2bf"
+	],
+	tasks: [{
+		uid: "6366acef",
+		type: "item",
+		items: [{
+			item: "extrautils2:endershard"
+		}],
+		count: 8L
+	}]
+}

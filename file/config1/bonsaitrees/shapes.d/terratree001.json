@@ -1,0 +1,51 @@
+{
+  "type": "botania_terratree",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "botania:storage",
+      "meta": 1
+    },
+    "b": {
+      "name": "botania:livingwood",
+      "meta": 5
+    }
+  },
+  "shape": [
+    [
+      "  b  ",
+      "  a  ",
+      "  a  ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "  a  ",
+      "     ",
+      "     "
+    ],
+    [
+      "b b b",
+      "a a a",
+      "aaaaa",
+      "  a  ",
+      "  a  "
+    ],
+    [
+      "     ",
+      "     ",
+      "  a  ",
+      "     ",
+      "     "
+    ],
+    [
+      "  b  ",
+      "  a  ",
+      "  a  ",
+      "     ",
+      "     "
+    ]
+  ]
+}

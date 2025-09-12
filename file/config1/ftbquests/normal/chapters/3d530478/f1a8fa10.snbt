@@ -1,0 +1,20 @@
+{
+	x: 7.5d,
+	y: 3.0d,
+	dependencies: [
+		"88e53656"
+	],
+	tasks: [{
+		uid: "36525c7e",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:item_mesh 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "add6e938",
+		type: "command",
+		auto: "invisible",
+		command: "/eco give @p 66"
+	}]
+}

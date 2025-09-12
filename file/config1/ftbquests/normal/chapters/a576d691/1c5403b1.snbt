@@ -1,0 +1,25 @@
+{
+	x: -3.0d,
+	y: -26.0d,
+	description: "空白石板、呼唤之魂供桌合成",
+	dependencies: [
+		"5222b4c8"
+	],
+	tasks: [{
+		uid: "068f5da7",
+		type: "item",
+		items: [{
+			item: "bloodmagic:sigil_divination"
+		}],
+		ignore_damage: 1b,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3e4a3a56",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

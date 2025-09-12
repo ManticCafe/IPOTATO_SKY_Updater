@@ -1,0 +1,11 @@
+{
+	x: 2.0d,
+	y: -0.5d,
+	tasks: [{
+		uid: "aa04aeee",
+		type: "item",
+		items: [{
+			item: "extrautils2:soundmuffler"
+		}]
+	}]
+}

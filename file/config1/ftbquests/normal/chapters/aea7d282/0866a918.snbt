@@ -1,0 +1,12 @@
+{
+	x: -13.0d,
+	y: -0.5d,
+	dependencies: [
+		"10ace3ff"
+	],
+	tasks: [{
+		uid: "c87fd0bf",
+		type: "checkmark",
+		title: "自定义流体(酿造机 or 反应釜可以试着nbt修改 如只有晚上才能合成等) 当原材料"
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	x: 4.5d,
+	y: 4.0d,
+	description: "'嘤语'",
+	dependencies: [
+		"172a504e"
+	],
+	tasks: [{
+		uid: "5135151b",
+		type: "item",
+		items: [{
+			item: "totemic:eagle_drops 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "00a5c9c6",
+		type: "command",
+		auto: "invisible",
+		command: "/eco give @p 66"
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: 5.0d,
+	y: 5.5d,
+	dependencies: [
+		"af2263ae"
+	],
+	tasks: [{
+		uid: "9286dc90",
+		type: "item",
+		items: [{
+			item: "threng:big_assembler"
+		}]
+	}]
+}

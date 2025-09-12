@@ -1,0 +1,22 @@
+{
+	x: -10.5d,
+	y: -23.5d,
+	dependencies: [
+		"cb6d8174"
+	],
+	tasks: [{
+		uid: "aca8f489",
+		type: "item",
+		items: [{
+			item: "ic2:upgrade"
+		}]
+	}],
+	rewards: [{
+		uid: "388313b7",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

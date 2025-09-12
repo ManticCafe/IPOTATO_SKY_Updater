@@ -1,0 +1,14 @@
+{
+	x: -7.0d,
+	y: 9.5d,
+	dependencies: [
+		"f00b6cf6"
+	],
+	tasks: [{
+		uid: "8bf79923",
+		type: "item",
+		items: [{
+			item: "packageddraconic:marked_wyvern_injector"
+		}]
+	}]
+}

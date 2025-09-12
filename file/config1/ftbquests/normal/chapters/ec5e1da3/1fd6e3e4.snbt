@@ -1,0 +1,62 @@
+{
+	title: "粉碎机",
+	icon: "immersiveengineering:metal_multiblock 1 1",
+	x: 6.0d,
+	y: -6.0d,
+	dependencies: [
+		"d62d36fe"
+	],
+	tasks: [{
+		uid: "f5b263a2",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1 1 1"
+		}],
+		count: 10L
+	},
+	{
+		uid: "7658f1f0",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 3"
+		}]
+	},
+	{
+		uid: "bdbd3860",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 4"
+		}],
+		count: 10L
+	},
+	{
+		uid: "9c1c593c",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1"
+		}],
+		count: 9L
+	},
+	{
+		uid: "ade57caf",
+		type: "item",
+		items: [{
+			item: "minecraft:hopper"
+		}],
+		count: 9L
+	}],
+	rewards: [{
+		uid: "6144f610",
+		type: "command",
+		auto: "invisible",
+		command: "/eco give @p 66"
+	},
+	{
+		uid: "cfeecdd2",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

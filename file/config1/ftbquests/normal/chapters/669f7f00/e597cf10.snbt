@@ -1,0 +1,14 @@
+{
+	x: -5.0d,
+	y: 7.5d,
+	dependencies: [
+		"e9eaeb4e"
+	],
+	tasks: [{
+		uid: "af4543e0",
+		type: "item",
+		items: [{
+			item: "packageddraconic:marked_chaotic_injector"
+		}]
+	}]
+}

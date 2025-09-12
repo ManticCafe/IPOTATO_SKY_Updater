@@ -1,0 +1,22 @@
+{
+	x: 2.5d,
+	y: -2.0d,
+	shape: "rsquare",
+	description: "蕴含灵气的金属！",
+	dependencies: [
+		"cb7706fa"
+	],
+	tasks: [{
+		uid: "f11c737d",
+		type: "item",
+		items: [{
+			item: "naturesaura:infused_iron"
+		}]
+	}],
+	rewards: [{
+		uid: "45a95fc5",
+		type: "item",
+		item: "naturesaura:infused_iron",
+		random_bonus: 7
+	}]
+}

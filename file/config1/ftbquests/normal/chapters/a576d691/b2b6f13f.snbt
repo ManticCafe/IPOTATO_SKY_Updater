@@ -1,0 +1,23 @@
+{
+	x: -6.0d,
+	y: -23.5d,
+	description: "新的开端",
+	dependencies: [
+		"6d60f0c0"
+	],
+	tasks: [{
+		uid: "eb45fd6a",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:frame"
+		}]
+	}],
+	rewards: [{
+		uid: "fc88bbbc",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

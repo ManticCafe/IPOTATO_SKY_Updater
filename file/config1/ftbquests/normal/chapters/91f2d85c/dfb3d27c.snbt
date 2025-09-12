@@ -1,0 +1,11 @@
+{
+	x: -10.5d,
+	y: -4.0d,
+	tasks: [{
+		uid: "140a50cf",
+		type: "item",
+		items: [{
+			item: "modularmachinery:internal_combustion_engine_factory_controller"
+		}]
+	}]
+}

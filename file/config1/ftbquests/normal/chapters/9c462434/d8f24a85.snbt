@@ -1,0 +1,14 @@
+{
+	x: -5.0d,
+	y: 21.0d,
+	dependencies: [
+		"278ff005"
+	],
+	tasks: [{
+		uid: "58723d38",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:material"
+		}]
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: -4.0d,
+	y: 14.5d,
+	dependencies: [
+		"ed5aa4ea"
+	],
+	tasks: [{
+		uid: "703a0517",
+		type: "item",
+		items: [{
+			item: "contenttweaker:blood_crystal_empowered"
+		}]
+	}]
+}

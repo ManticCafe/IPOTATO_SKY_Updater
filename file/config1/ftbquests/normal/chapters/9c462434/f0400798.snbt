@@ -1,0 +1,18 @@
+{
+	title: "四级祭坛——大血石砖",
+	x: -2.0d,
+	y: 9.5d,
+	shape: "circle",
+	description: "现阶段已可做到五级祭坛！",
+	dependencies: [
+		"5b052f94",
+		"0678308f"
+	],
+	tasks: [{
+		uid: "3aa73da3",
+		type: "item",
+		items: [{
+			item: "bloodmagic:decorative_brick"
+		}]
+	}]
+}

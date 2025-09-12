@@ -1,0 +1,15 @@
+{
+	x: -16.0d,
+	y: 19.5d,
+	shape: "rsquare",
+	dependencies: [
+		"4a7ba00d"
+	],
+	tasks: [{
+		uid: "bb9f1504",
+		type: "item",
+		items: [{
+			item: "deepmoblearningbm:digital_agonizer"
+		}]
+	}]
+}

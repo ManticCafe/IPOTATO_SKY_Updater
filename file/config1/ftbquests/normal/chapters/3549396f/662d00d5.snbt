@@ -1,0 +1,17 @@
+{
+	x: -9.5d,
+	y: 3.0d,
+	dependencies: [
+		"7a72a369"
+	],
+	tasks: [{
+		uid: "7800658f",
+		type: "item",
+		items: [{
+			tag: {},
+			id: "appliedenergistics2:portable_cell"
+		}],
+		ignore_damage: 1b,
+		ignore_nbt: 1b
+	}]
+}

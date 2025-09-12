@@ -1,0 +1,12 @@
+{
+	x: -1.5d,
+	y: 1.0d,
+	description: "产神秘水晶",
+	tasks: [{
+		uid: "5ddf103a",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:laser_drill"
+		}]
+	}]
+}

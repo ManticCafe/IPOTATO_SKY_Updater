@@ -1,0 +1,21 @@
+{
+	x: -13.5d,
+	y: 6.0d,
+	description: "共振红石水晶、各种不可预测的魔力粉晶制作",
+	dependencies: [
+		"f6c8ca8d",
+		"7ebebb41"
+	],
+	tasks: [{
+		uid: "16712167",
+		type: "item",
+		items: [{
+			item: "bloodmagic:component 1 8"
+		}]
+	}],
+	rewards: [{
+		uid: "37e10592",
+		type: "command",
+		command: "/eco give @p 150"
+	}]
+}

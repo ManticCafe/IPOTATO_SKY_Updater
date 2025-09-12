@@ -1,0 +1,14 @@
+{
+	x: -8.0d,
+	y: 22.0d,
+	dependencies: [
+		"be933fe1"
+	],
+	tasks: [{
+		uid: "46999c06",
+		type: "item",
+		items: [{
+			item: "contenttweaker:biology_circuit"
+		}]
+	}]
+}

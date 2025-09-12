@@ -1,0 +1,38 @@
+{
+	x: 4.0d,
+	y: 2.0d,
+	description: "象征生命",
+	dependencies: [
+		"f63dbcbc"
+	],
+	tasks: [{
+		uid: "7d20acfd",
+		type: "item",
+		items: [{
+			tag: {
+				type: "puredaisy"
+			},
+			id: "botania:specialflower"
+		}]
+	}],
+	rewards: [{
+		uid: "23a716ce",
+		type: "item",
+		item: "botania:livingwood",
+		count: 16
+	},
+	{
+		uid: "38897d44",
+		type: "item",
+		item: "botania:livingrock",
+		count: 16
+	},
+	{
+		uid: "56a66ff1",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

@@ -1,0 +1,39 @@
+{
+	title: "关于空岛",
+	icon: "minecraft:grass",
+	x: 2.0d,
+	y: 1.5d,
+	shape: "square",
+	text: [
+		"/island - 创建一个新的空岛，打开GUI或将玩家传送到他们的空岛，家或团队",
+		"/island help - 查看空岛帮助",
+		"/island go - 传送到你的空岛",
+		"/island go  - 传送到编号的空岛家（使用/ sethome设置）",
+		"/island biomes - 打开空岛生物群系",
+		"/island expel - 从您的空岛中删除游客",
+		"/island reset或者restart - 重启岛屿，它有一个冷却时间和最大限制，最好不要经常滥用",
+		"/island level - 查看空岛等级",
+		"/island level  - 查看其它空岛的等级排名",
+		"/island lock - 锁定岛屿，不让其他玩家tp到你的岛屿中",
+		"/island ms或者minishop - 打开出售或者收购商店的GUI",
+		"/island top - 在排行榜里展示前十名的排名",
+		"/island sethome  - 设置自己的家，如果服务器允许更多就可以创建更多的家啦~",
+		"/island spawn - 传送到主城",
+		"/island warps - 列出可以用的其它玩家空岛传送点的GUI",
+		"/island invite - 邀请玩家加入你的团队，你一次只能邀请一个人.",
+		"/island accept或者reject - 接受或者拒绝邀请.如果被邀请的玩家已经拥有一个空岛并接受，则被邀请的空岛将被删除。",
+		"/island team - 列出团队的成员",
+		"/island teamchat - 使团队能够在不打扰他人的情况下相互聊天，而且必须在config.yml中设置，并且玩家必须在团队中才能查看命令，聊天室可以被后台看得一清二楚。",
+		"/island leave -离开团队并传送到主城",
+		"/island kick或者remove  - 仅适用于空岛所有者或领导者 - 移除团队成员。如果玩家在线，他们的所有物品都将消失，并且他们将被会被传送到主城。 如果他们处于离线状态，他们会在登录时收到他们被踢的消息。",
+		"/island makeleader  - 将空岛所有权转让给团队成员，只能由所有者给予所有权."
+	],
+	dependencies: [
+		"f178f9d4"
+	],
+	tasks: [{
+		uid: "42ec7b70",
+		type: "checkmark",
+		title: "关于空岛"
+	}]
+}

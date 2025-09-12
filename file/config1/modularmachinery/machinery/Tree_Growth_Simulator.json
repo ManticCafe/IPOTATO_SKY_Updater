@@ -1,0 +1,255 @@
+{
+    "registryname":"Tree_Growth_Simulator",
+    "localizedname":"原木拟生场",
+    "color":"1e0c06",
+    "parts": [
+        {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockcontroller@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "botania:livingwood@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "botania:livingwood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockfluidinputhatch",
+                "modularmachinery:blockinputbus",
+                "modularmachinery:blockoutputbus",
+                "modularmachinery:blockmanaproviderinput",
+                "gugu-utils:sparkmanahatch",
+                "modularmachinery:blockcasing"            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "botania:livingwood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "botania:livingwood@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "botania:livingwood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "botania:livingwood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "botania:livingwood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockfluidinputhatch",
+                "modularmachinery:blockinputbus",
+                "modularmachinery:blockoutputbus",
+                "modularmachinery:blockmanaproviderinput",
+                "gugu-utils:sparkmanahatch",
+                "modularmachinery:blockcasing"            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "botania:livingwood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "botania:livingwood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "botania:livingwood@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "botania:livingwood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "botania:livingwood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockfluidinputhatch",
+                "modularmachinery:blockinputbus",
+                "modularmachinery:blockoutputbus",
+                "modularmachinery:blockmanaproviderinput",
+                "gugu-utils:sparkmanahatch",
+                "modularmachinery:blockcasing"            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockfluidinputhatch",
+                "modularmachinery:blockinputbus",
+                "modularmachinery:blockoutputbus",
+                "modularmachinery:blockmanaproviderinput",
+                "gugu-utils:sparkmanahatch",
+                "modularmachinery:blockcasing"            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockfluidinputhatch",
+                "modularmachinery:blockinputbus",
+                "modularmachinery:blockoutputbus",
+                "modularmachinery:blockmanaproviderinput",
+                "gugu-utils:sparkmanahatch",
+                "modularmachinery:blockcasing"            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockfluidinputhatch",
+                "modularmachinery:blockinputbus",
+                "modularmachinery:blockoutputbus",
+                "modularmachinery:blockmanaproviderinput",
+                "gugu-utils:sparkmanahatch",
+                "modularmachinery:blockcasing"            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "nbt": {"id":"randomthings:naturecore"},
+            "elements": [
+                "randomthings:naturecore@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "botania:livingwood@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockfluidinputhatch",
+                "modularmachinery:blockinputbus",
+                "modularmachinery:blockoutputbus",
+                "modularmachinery:blockmanaproviderinput",
+                "gugu-utils:sparkmanahatch",
+                "modularmachinery:blockcasing"            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockfluidinputhatch",
+                "modularmachinery:blockinputbus",
+                "modularmachinery:blockoutputbus",
+                "modularmachinery:blockmanaproviderinput",
+                "gugu-utils:sparkmanahatch",
+                "modularmachinery:blockcasing"            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "botania:livingwood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "botania:livingwood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "botania:livingwood@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "botania:livingwood@0"
+            ]
+        }
+    ]}

@@ -1,0 +1,14 @@
+{
+	x: -2.5d,
+	y: -2.0d,
+	tasks: [{
+		uid: "134f145b",
+		type: "item",
+		items: [{
+			tag: {
+				material: "oak"
+			},
+			id: "storagedrawers:basicdrawers"
+		}]
+	}]
+}

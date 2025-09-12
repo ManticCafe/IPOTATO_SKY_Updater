@@ -1,0 +1,25 @@
+{
+	x: -3.0d,
+	y: -15.5d,
+	shape: "gear",
+	description: "精炼获得",
+	dependencies: [
+		"1a96d07e",
+		"00b17ecc"
+	],
+	tasks: [{
+		uid: "53ba0b9f",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 833"
+		}]
+	}],
+	rewards: [{
+		uid: "03c47d03",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

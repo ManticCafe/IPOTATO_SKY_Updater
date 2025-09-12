@@ -1,0 +1,18 @@
+{
+	x: -12.0d,
+	y: 9.5d,
+	description: "用大地苔藓、束缚之锹进行仪式",
+	dependencies: [
+		"a0856d43",
+		"03428108"
+	],
+	tasks: [{
+		uid: "265b0cdd",
+		type: "item",
+		items: [{
+			item: "roots:pestle"
+		}],
+		ignore_damage: 1b,
+		ignore_nbt: 1b
+	}]
+}

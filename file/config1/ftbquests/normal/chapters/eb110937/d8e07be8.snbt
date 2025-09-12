@@ -1,0 +1,12 @@
+{
+	x: 3.5d,
+	y: 1.0d,
+	description: "更高级、方便的物流系统！",
+	tasks: [{
+		uid: "e88d9afb",
+		type: "item",
+		items: [{
+			item: "modularrouters:item_router"
+		}]
+	}]
+}

@@ -1,0 +1,11 @@
+{
+	title: "欢迎来到土豆梦幻科技空岛2.0",
+	icon: "botania_tweaks:compressed_tiny_potato_8",
+	x: 0.5d,
+	y: 0.0d,
+	shape: "square",
+	tasks: [{
+		uid: "fa7945f0",
+		type: "checkmark"
+	}]
+}

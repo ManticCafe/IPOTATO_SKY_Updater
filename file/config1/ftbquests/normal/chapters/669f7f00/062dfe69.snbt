@@ -1,0 +1,17 @@
+{
+	x: 7.0d,
+	y: 3.5d,
+	text: [
+		"大号的存储驱动器"
+	],
+	dependencies: [
+		"5cef7846"
+	],
+	tasks: [{
+		uid: "54b646b7",
+		type: "item",
+		items: [{
+			item: "ecoaeextension:extendable_digital_storage_subsystem_l4"
+		}]
+	}]
+}

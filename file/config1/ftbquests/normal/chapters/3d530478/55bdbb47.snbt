@@ -1,0 +1,14 @@
+{
+	title: "造石机：高松灯",
+	x: 0.0d,
+	y: -3.5d,
+	shape: "octagon",
+	description: "可在服务器菜单中的宠物菜单使用2000游戏币购买高松灯，能给您产石哦~",
+	dependencies: [
+		"c677e8f8"
+	],
+	tasks: [{
+		uid: "2a55214c",
+		type: "checkmark"
+	}]
+}

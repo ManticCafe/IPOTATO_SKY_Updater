@@ -1,0 +1,37 @@
+{
+	x: -6.0d,
+	y: -21.0d,
+	dependencies: [
+		"b2b6f13f"
+	],
+	tasks: [{
+		uid: "205edfed",
+		type: "item",
+		items: [{
+			Damage: 8s,
+			tag: {
+				Energy: 0,
+				RSControl: 0b,
+				Facing: 3b,
+				Level: 0b,
+				SideCache: [B;
+					3b,
+					1b,
+					2b,
+					2b,
+					2b,
+					2b
+				]
+			},
+			id: "thermalexpansion:machine"
+		}]
+	}],
+	rewards: [{
+		uid: "a88a907c",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

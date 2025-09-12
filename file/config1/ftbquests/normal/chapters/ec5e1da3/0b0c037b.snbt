@@ -1,0 +1,36 @@
+{
+	x: 10.0d,
+	y: -4.0d,
+	description: "能召唤可约会的精灵吗(?)",
+	dependencies: [
+		"e82e56e1",
+		"1f7ee7ed"
+	],
+	tasks: [{
+		uid: "fca2e1df",
+		type: "item",
+		items: [{
+			item: "botania:alfheimportal"
+		}]
+	}],
+	rewards: [{
+		uid: "4e5d8241",
+		type: "command",
+		auto: "invisible",
+		command: "/eco give @p 66"
+	},
+	{
+		uid: "e52d917f",
+		type: "command",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	},
+	{
+		uid: "aa8d0cf7",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

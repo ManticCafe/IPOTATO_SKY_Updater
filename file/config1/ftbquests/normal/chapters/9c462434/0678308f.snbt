@@ -1,0 +1,21 @@
+{
+	x: -5.5d,
+	y: 9.5d,
+	shape: "rsquare",
+	description: "可合成大血石砖",
+	dependencies: [
+		"0fb26c11"
+	],
+	tasks: [{
+		uid: "fc550837",
+		type: "item",
+		items: [{
+			item: "extrautils2:decorativesolid 1 3"
+		}]
+	}],
+	rewards: [{
+		uid: "00ef06cf",
+		type: "command",
+		command: "/eco give @p 180"
+	}]
+}

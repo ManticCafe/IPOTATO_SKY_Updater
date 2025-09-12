@@ -1,0 +1,30 @@
+{
+	title: "梦的起点",
+	x: -11.4d,
+	y: -30.0d,
+	description: "使用沉浸电路板在工程师工作台合成",
+	dependencies: [
+		"96cf48b8"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "414e47cd",
+		type: "item",
+		items: [{
+			item: "ic2:crafting 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "c5b0c94a",
+		type: "command",
+		command: "/eco give @p 120"
+	},
+	{
+		uid: "d97be640",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

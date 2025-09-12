@@ -1,0 +1,14 @@
+{
+	icon: "minecraft:bed 1 14",
+	x: 2.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"f178f9d4"
+	],
+	tasks: [{
+		uid: "c76077ce",
+		type: "checkmark",
+		title: "关于EssentialsX"
+	}]
+}

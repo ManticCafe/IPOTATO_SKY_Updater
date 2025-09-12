@@ -1,0 +1,11 @@
+{
+	x: -9.5d,
+	y: 1.0d,
+	tasks: [{
+		uid: "04acd60c",
+		type: "item",
+		items: [{
+			item: "enderstorage:ender_storage"
+		}]
+	}]
+}

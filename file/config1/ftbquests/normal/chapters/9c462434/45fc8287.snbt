@@ -1,0 +1,17 @@
+{
+	x: -16.0d,
+	y: 16.5d,
+	shape: "gear",
+	description: "人畜无害",
+	dependencies: [
+		"f7b73ee2",
+		"8173d19d"
+	],
+	tasks: [{
+		uid: "cd31c2b7",
+		type: "item",
+		items: [{
+			item: "artisanworktables:worktable 1 9"
+		}]
+	}]
+}

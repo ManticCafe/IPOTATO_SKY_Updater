@@ -1,0 +1,15 @@
+{
+	x: -2.0d,
+	y: 15.5d,
+	description: "放置红柏树苗",
+	dependencies: [
+		"f0400798"
+	],
+	tasks: [{
+		uid: "1f89aca3",
+		type: "item",
+		items: [{
+			item: "roots:pereskia"
+		}]
+	}]
+}

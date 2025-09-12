@@ -1,0 +1,18 @@
+{
+	title: "恭喜您！已经初步进入大佬的阶段！",
+	x: -8.0d,
+	y: 16.5d,
+	description: "实用设备的开始.....吗？",
+	dependencies: [
+		"93ef1d99",
+		"d93fcc94",
+		"7031bbf2"
+	],
+	tasks: [{
+		uid: "1b6d0829",
+		type: "item",
+		items: [{
+			item: "extrautils2:machine"
+		}]
+	}]
+}

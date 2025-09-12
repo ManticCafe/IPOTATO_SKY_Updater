@@ -1,0 +1,16 @@
+{
+	x: -12.0d,
+	y: 6.0d,
+	description: "用法师工作台制作，束缚之镐为介质",
+	dependencies: [
+		"f6c8ca8d",
+		"7ebebb41"
+	],
+	tasks: [{
+		uid: "caece990",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 51"
+		}]
+	}]
+}

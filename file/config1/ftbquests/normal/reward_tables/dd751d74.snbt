@@ -1,0 +1,6 @@
+{
+	title: "风车/水车",
+	icon: "immersiveengineering:wooden_device1 1 1",
+	loot_size: 1,
+	rewards: []
+}

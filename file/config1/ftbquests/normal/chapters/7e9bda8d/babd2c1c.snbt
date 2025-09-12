@@ -1,0 +1,12 @@
+{
+	x: 0.0d,
+	y: 3.5d,
+	size: 2.0d,
+	tasks: [{
+		uid: "bf3bfced",
+		type: "item",
+		items: [{
+			item: "botania_tweaks:compressed_tiny_potato_8"
+		}]
+	}]
+}

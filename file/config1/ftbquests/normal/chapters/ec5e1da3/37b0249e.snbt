@@ -1,0 +1,33 @@
+{
+	title: "模块化装配机(电路板,工程师装配站,部分模块化控制器)",
+	x: 12.0d,
+	y: -2.0d,
+	description: "万用机器",
+	dependencies: [
+		"1f7ee7ed",
+		"40fc6600",
+		"91fb499d",
+		"0b0c037b"
+	],
+	tasks: [{
+		uid: "12fb8242",
+		type: "item",
+		items: [{
+			item: "modularmachinery:assembly_machine_controller"
+		}]
+	}],
+	rewards: [{
+		uid: "e9f16b37",
+		type: "command",
+		auto: "invisible",
+		command: "/eco give @p 180"
+	},
+	{
+		uid: "69abf40b",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

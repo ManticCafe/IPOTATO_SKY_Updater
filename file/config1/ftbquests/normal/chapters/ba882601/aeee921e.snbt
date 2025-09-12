@@ -1,0 +1,14 @@
+{
+	x: -2.0d,
+	y: -4.0d,
+	tasks: [{
+		uid: "20a0f8a9",
+		type: "item",
+		items: [{
+			tag: {
+				type: "orechid"
+			},
+			id: "botania:specialflower"
+		}]
+	}]
+}

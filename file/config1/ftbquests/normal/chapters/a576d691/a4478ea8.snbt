@@ -1,0 +1,27 @@
+{
+	x: -9.0d,
+	y: -25.0d,
+	dependencies: [
+		"6d60f0c0"
+	],
+	tasks: [{
+		uid: "b86ee4d5",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 55"
+		}]
+	}],
+	rewards: [{
+		uid: "dbec8c25",
+		type: "command",
+		command: "/eco give @p 120"
+	},
+	{
+		uid: "0080f0e1",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

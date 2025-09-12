@@ -1,0 +1,28 @@
+{
+	x: 1.0d,
+	y: -27.5d,
+	dependencies: [
+		"2fd06965",
+		"039c3469"
+	],
+	tasks: [{
+		uid: "e7f3b3a9",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:upgrade 1 3"
+		}]
+	}],
+	rewards: [{
+		uid: "4e6c0d54",
+		type: "command",
+		command: "/eco give @p 888"
+	},
+	{
+		uid: "ee0224f5",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

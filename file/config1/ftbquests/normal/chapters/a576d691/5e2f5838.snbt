@@ -1,0 +1,29 @@
+{
+	x: -12.0d,
+	y: -21.0d,
+	description: "流体转置蕴魔丝线，1:5",
+	dependencies: [
+		"cb6d8174",
+		"487ceeae"
+	],
+	tasks: [{
+		uid: "f4ee9704",
+		type: "item",
+		items: [{
+			item: "bloodmagic:soul_snare"
+		}]
+	}],
+	rewards: [{
+		uid: "68e19d40",
+		type: "command",
+		command: "/eco give @p 120"
+	},
+	{
+		uid: "e5aa67b7",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

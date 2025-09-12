@@ -1,0 +1,24 @@
+{
+	title: "更方便的合金",
+	x: -2.0d,
+	y: -4.0d,
+	dependencies: [
+		"8a13cad2"
+	],
+	tasks: [{
+		uid: "91601cee",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration 1 10"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "9c67af12",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	x: -3.5d,
+	y: 8.0d,
+	description: "廉价好用",
+	dependencies: [
+		"ebece44b"
+	],
+	tasks: [{
+		uid: "9a2f630c",
+		type: "item",
+		items: [{
+			item: "roots:elemental_soil"
+		}]
+	}],
+	rewards: [{
+		uid: "1adf6d89",
+		type: "command",
+		auto: "invisible",
+		command: "/eco give @p 200"
+	}]
+}

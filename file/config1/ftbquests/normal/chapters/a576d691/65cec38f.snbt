@@ -1,0 +1,30 @@
+{
+	title: "第一个核心！",
+	x: -3.0d,
+	y: -18.5d,
+	shape: "rsquare",
+	description: "来自遥远异域科技的土豆核心",
+	dependencies: [
+		"fc745154"
+	],
+	tasks: [{
+		uid: "ec7299c5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:potato_core"
+		}]
+	}],
+	rewards: [{
+		uid: "c4aab614",
+		type: "command",
+		command: "/eco give @p 500"
+	},
+	{
+		uid: "aaee9f6c",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

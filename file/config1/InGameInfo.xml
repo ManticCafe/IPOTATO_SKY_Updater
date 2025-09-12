@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<config>
+    <lines at="middleleft">
+        <line>
+            <str>§e| §c§l土§6§l豆§e§l梦§2§l幻§3§l科§9§l技§5空§d岛 §b——Ping: §a{ping} </str>
+        </line>
+
+        <line>
+            <str>§e| §e 你好: §d{username} </str>
+        </line>
+        <line>
+            <str>§e| §b TPS: §a{tps} §0§r|§b MSPT: §a{mspt}                                                     </str>
+        </line>
+
+        <line>
+            <str>§e| §3 当前位置亮度等级: §a{light} §0§r|§6 当前FPS: §a{fps}                                    </str>
+        </line>
+        <line>
+            <str>§e| §2 维度: §a{dimension} §0§r|§4 生物群系: §a{biome}                                           </str>
+        </line>
+        <line>
+            <str>§e| §9 月相:</str> 
+            <operation>
+                <str>EQ</str>
+                <var>moonphase</var>
+                    <num>0</num>
+                    <num>1</num>
+                    <num>2</num>
+                    <num>3</num>
+                    <num>4</num>
+                    <num>5</num>
+                    <num>6</num>
+                    <num>7</num>
+                        <str>§a满月</str>
+                        <str>§a亏凸月</str>
+                        <str>§a下弦月</str>
+                        <str>§a残月</str>
+                        <str>§a新月</str>
+                        <str>§a蛾眉月</str>
+                        <str>§a上弦月</str>
+                        <str>§a盈凸月</str>
+            </operation>
+            <str>§0§r|§c 游戏难度: §a{difficulty}</str>
+        </line>
+        <line>
+            <str>§e| §3 Minecraft天数: §a{day} §0§r|§8 Minecraft时间: §a{mctime24} §0§r|§e 现实时间: §a{rltime24} </str>
+        </line>
+                <line>
+            <str>§e| §6 玩家朝向:</str>
+            <operation>
+                <str>EQ</str>
+                <var>finedirection</var>
+                    <str>North</str>
+                    <str>North East</str>
+                    <str>East</str>
+                    <str>South East</str>
+                    <str>South</str>
+                    <str>South West</str>
+                    <str>West</str>
+                    <str>North West</str>
+                        <str>§a北</str>
+                        <str>§a东北</str>
+                        <str>§a东</str>
+                        <str>§a东南</str>
+                        <str>§a南</str>
+                        <str>§a西南</str>
+                        <str>§a西</str>
+                        <str>§a西北</str>
+            </operation>
+            <str>§0§r|§5 玩家坐标: §a{xi}§f/§a{yi}§f/§a{zi}</str>
+        </line>
+    </lines>
+</config>

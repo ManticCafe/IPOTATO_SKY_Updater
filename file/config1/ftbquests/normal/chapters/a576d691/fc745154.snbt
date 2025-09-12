@@ -1,0 +1,28 @@
+{
+	x: -3.0d,
+	y: -20.5d,
+	description: "花咲川师生的智慧结晶",
+	dependencies: [
+		"ff2f3eeb"
+	],
+	tasks: [{
+		uid: "fe6165ed",
+		type: "item",
+		items: [{
+			item: "modularmachinery:kokoro_core_manufacturing_beta_controller"
+		}]
+	}],
+	rewards: [{
+		uid: "18e4c363",
+		type: "command",
+		command: "/eco give @p 120"
+	},
+	{
+		uid: "4b0128da",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

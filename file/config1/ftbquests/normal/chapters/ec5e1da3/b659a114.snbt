@@ -1,0 +1,72 @@
+{
+	title: "工业挤压机",
+	icon: "immersiveengineering:metal_multiblock 1 7",
+	x: -1.0d,
+	y: -8.0d,
+	hide_dependency_lines: 1b,
+	dependencies: [
+		"1713d583"
+	],
+	tasks: [{
+		uid: "bb8c22a5",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1 1 1"
+		}],
+		count: 6L
+	},
+	{
+		uid: "31932ebc",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device1 1 6"
+		}],
+		count: 2L
+	},
+	{
+		uid: "4ad6ac62",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 3"
+		}]
+	},
+	{
+		uid: "987671eb",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 4"
+		}],
+		count: 2L
+	},
+	{
+		uid: "9b4a5213",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:wooden_device0 1 1"
+		}],
+		count: 4L
+	},
+	{
+		uid: "e22b6085",
+		type: "item",
+		items: [{
+			item: "minecraft:piston"
+		}]
+	},
+	{
+		uid: "4268a653",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1"
+		}],
+		count: 3L
+	}],
+	rewards: [{
+		uid: "d4fa2684",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: 1.0d,
+	text: [
+		"感觉不如水槽"
+	],
+	tasks: [{
+		uid: "016d181b",
+		type: "item",
+		items: [{
+			item: "roots:unending_bowl"
+		}]
+	}]
+}

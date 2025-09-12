@@ -1,0 +1,27 @@
+{
+	x: -18.0d,
+	y: -18.5d,
+	dependencies: [
+		"2f536593"
+	],
+	tasks: [{
+		uid: "b771dc7c",
+		type: "item",
+		items: [{
+			item: "modularmachinery:industrial_farm_max_controller"
+		}]
+	}],
+	rewards: [{
+		uid: "c1810b08",
+		type: "command",
+		command: "/eco give @p 150"
+	},
+	{
+		uid: "4f5a7feb",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

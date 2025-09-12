@@ -1,0 +1,7 @@
+{
+	title: "第五章 高新技术",
+	icon: "mekanism:basicblock 1 8",
+	always_invisible: 1b,
+	group: 0,
+	default_quest_shape: ""
+}

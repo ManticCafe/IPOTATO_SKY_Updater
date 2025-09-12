@@ -1,0 +1,21 @@
+{
+	x: 4.5d,
+	y: 0.0d,
+	description: "所有系统全部启动启动启动还有~这个！",
+	dependencies: [
+		"cb7706fa"
+	],
+	tasks: [{
+		uid: "2b77e6e2",
+		type: "item",
+		items: [{
+			item: "naturesaura:conversion_catalyst"
+		}]
+	}],
+	rewards: [{
+		uid: "cad29a9e",
+		type: "command",
+		auto: "invisible",
+		command: "/eco give @p 66"
+	}]
+}

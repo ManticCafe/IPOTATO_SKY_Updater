@@ -1,0 +1,11 @@
+{
+	x: 6.0d,
+	y: 1.0d,
+	shape: "square",
+	description: "深不可测的正义宝晶都有着等价的魔力...",
+	tasks: [{
+		uid: "be055fa7",
+		type: "checkmark",
+		title: "ps:自然灵气的天空锭可以丢进魔力池转化魔力，同等于黑莲花的产量"
+	}]
+}
