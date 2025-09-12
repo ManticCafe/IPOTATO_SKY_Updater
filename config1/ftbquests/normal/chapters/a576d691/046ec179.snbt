@@ -1,0 +1,25 @@
+{
+	x: -1.0d,
+	y: -26.0d,
+	dependencies: [
+		"ba5f26ad"
+	],
+	tasks: [{
+		uid: "fdb02987",
+		type: "item",
+		items: [{
+			Damage: 2s,
+			tag: {},
+			id: "bloodmagic:soul_gem"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4002f17e",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

@@ -1,0 +1,32 @@
+{
+	x: 12.0d,
+	y: -6.0d,
+	text: [
+		"任意耐久即可"
+	],
+	dependencies: [
+		"5adb85ea"
+	],
+	tasks: [{
+		uid: "48dcc9ca",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:graphite_electrode"
+		}],
+		ignore_nbt: 2b
+	}],
+	rewards: [{
+		uid: "d4667475",
+		type: "command",
+		auto: "invisible",
+		command: "/eco give @p 66"
+	},
+	{
+		uid: "5c25c562",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

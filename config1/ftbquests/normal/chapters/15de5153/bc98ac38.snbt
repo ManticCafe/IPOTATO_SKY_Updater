@@ -1,0 +1,21 @@
+{
+	title: "使用票券兑换升级总线",
+	x: -1.5d,
+	y: 4.0d,
+	shape: "hexagon",
+	tasks: [{
+		uid: "0d9c2770",
+		type: "item",
+		items: [{
+			item: "contenttweaker:low_ticket"
+		}],
+		count: 4L,
+		consume_items: 1b
+	}],
+	rewards: [{
+		uid: "d5c64ee1",
+		type: "item",
+		team_reward: 1b,
+		item: "modularmachinery:blockupgradebus"
+	}]
+}

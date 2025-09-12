@@ -1,0 +1,30 @@
+{
+	title: "模块化魔力液化机",
+	x: 10.0d,
+	y: 2.0d,
+	hide_dependency_lines: 1b,
+	dependencies: [
+		"40fc6600"
+	],
+	tasks: [{
+		uid: "3437303a",
+		type: "item",
+		items: [{
+			item: "modularmachinery:mana_liquefies_controller"
+		}]
+	}],
+	rewards: [{
+		uid: "bb6bd794",
+		type: "command",
+		auto: "invisible",
+		command: "/eco give @p 88"
+	},
+	{
+		uid: "d8f08ef8",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

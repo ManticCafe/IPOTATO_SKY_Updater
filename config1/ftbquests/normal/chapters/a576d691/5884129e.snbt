@@ -1,0 +1,31 @@
+{
+	title: "复兴的开始",
+	x: -11.5d,
+	y: -32.0d,
+	shape: "rsquare",
+	description: "使用任意工程块加4个钢板在工作坊合成。轻型1:2/重型1:3，等做到装配机MK2之时即可简化合成",
+	dependencies: [
+		"ce0555d3"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "07b46470",
+		type: "item",
+		items: [{
+			item: "ic2:resource 1 12"
+		}]
+	}],
+	rewards: [{
+		uid: "db2a11bc",
+		type: "command",
+		command: "/eco give @p 150"
+	},
+	{
+		uid: "a9718b67",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

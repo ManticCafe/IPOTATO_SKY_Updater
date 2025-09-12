@@ -1,0 +1,17 @@
+{
+	x: 13.0d,
+	y: -0.5d,
+	text: [
+		"豪用"
+	],
+	dependencies: [
+		"9fc0abe8"
+	],
+	tasks: [{
+		uid: "768c91b1",
+		type: "item",
+		items: [{
+			item: "ae2stuff:wireless"
+		}]
+	}]
+}

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+    <recipe name="AlumiteIngot">
+        <alloying energy="25000">
+            <input name="ingotAluminum" amount="5"/>
+            <input name="ingotIron" amount="2"/>
+            <input name="obsidian" amount="2"/>
+            <output name="contenttweaker:alumite_ingot" amount="7"/>
+        </alloying>
+    </recipe>
+    <recipe name="basic_intergrowth_dust">
+        <alloying energy="25565">
+            <input name="contenttweaker:alumite_dust" amount="2"/>
+            <input name="contenttweaker:sky_essence" amount="1"/>
+            <input name="taiga:karmesine_dust" amount="2"/>
+            <output name="contenttweaker:basic_intergrowth_dust" amount="1"/>
+        </alloying>
+    </recipe>
+    <recipe name="abyssum_gem">
+        <alloying energy="32768">
+            <input name="taiga:abyssum_dust" amount="3"/>
+            <input name="environmentaltech:litherite_crystal" amount="1"/>
+            <output name="contenttweaker:abyssum_gem" amount="1"/>
+        </alloying>
+    </recipe>
+    <recipe name="middle_intergrowth_dust">
+        <alloying energy="52000">
+            <input name="actuallyadditions:item_dust:7" amount="6"/>
+            <input name="contenttweaker:luna_gem" amount="1"/>
+            <input name="contenttweaker:roots_dust" amount="2"/>
+            <output name="contenttweaker:middle_intergrowth_dust" amount="2"/>
+        </alloying>
+    </recipe>
+    <recipe name="Soul C">
+        <alloying energy="4096">
+            <input name="enderio:item_material:66" amount="1"/>
+            <input name="enderio:item_material:52" amount="1"/>
+            <output name="enderio:item_material:53" amount="1"/>
+        </alloying>
+    </recipe>
+    <recipe name="growth1" required="true">
+        <fermenting energy="33333">
+        <inputgroup>
+            <input name="contenttweaker:goldleaf_essence" multiplier="0.5"/>
+            <input name="contenttweaker:growth_essence" multiplier="0.75"/>
+            <input name="roots:terra_moss" multiplier="0.5"/>
+            <input name="contenttweaker:green_gem" multiplier="3.0"/>
+            <input name="botania:overgrowthseed" multiplier="1.75"/>
+            <input name="botania:grassseeds" multiplier="0.25"/>
+        </inputgroup>
+        <inputgroup>
+            <input name="contenttweaker:blood_crystal_dust" multiplier="0.5"/>
+            <input name="contenttweaker:roots_dust" multiplier="0.75"/>
+            <input name="contenttweaker:blood_cryotheum" multiplier="0.75"/>
+            <input name="botania:blacklotus:1" multiplier="2.0"/>
+            <input name="botania:blacklotus" multiplier="1.0"/>
+            <input name="astralsorcery:itemusabledust" multiplier="1.75"/>
+    </inputgroup>
+            <inputfluid name="ender_distillation" multiplier="1.5"/>
+            <outputfluid name="growth"/>
+    </fermenting>
+    </recipe>
+    <recipe name="growth2" required="true">
+        <fermenting energy="33333">
+        <inputgroup>
+            <input name="contenttweaker:goldleaf_essence" multiplier="0.5"/>
+            <input name="contenttweaker:growth_essence" multiplier="0.75"/>
+            <input name="roots:terra_moss" multiplier="0.5"/>
+            <input name="contenttweaker:green_gem" multiplier="3.0"/>
+            <input name="botania:overgrowthseed" multiplier="1.75"/>
+            <input name="botania:grassseeds" multiplier="0.25"/>
+        </inputgroup>
+        <inputgroup>
+            <input name="contenttweaker:blood_crystal_dust" multiplier="0.5"/>
+            <input name="contenttweaker:roots_dust" multiplier="0.75"/>
+            <input name="contenttweaker:blood_cryotheum" multiplier="0.75"/>
+            <input name="botania:blacklotus:1" multiplier="2.0"/>
+            <input name="botania:blacklotus" multiplier="1.0"/>
+            <input name="astralsorcery:itemusabledust" multiplier="1.75"/>
+    </inputgroup>
+            <inputfluid name="mana" multiplier="3.5"/>
+            <outputfluid name="growth"/>
+    </fermenting>
+    </recipe>
+    <recipe name="growth3" required="true">
+        <fermenting energy="33333">
+        <inputgroup>
+            <input name="contenttweaker:goldleaf_essence" multiplier="0.5"/>
+            <input name="contenttweaker:growth_essence" multiplier="0.75"/>
+            <input name="roots:terra_moss" multiplier="0.5"/>
+            <input name="contenttweaker:green_gem" multiplier="3.0"/>
+            <input name="botania:overgrowthseed" multiplier="1.75"/>
+            <input name="botania:grassseeds" multiplier="0.25"/>
+        </inputgroup>
+        <inputgroup>
+            <input name="contenttweaker:blood_crystal_dust" multiplier="0.5"/>
+            <input name="contenttweaker:roots_dust" multiplier="0.75"/>
+            <input name="contenttweaker:blood_cryotheum" multiplier="0.75"/>
+            <input name="botania:blacklotus:1" multiplier="2.0"/>
+            <input name="botania:blacklotus" multiplier="1.0"/>
+            <input name="astralsorcery:itemusabledust" multiplier="1.75"/>
+    </inputgroup>
+            <inputfluid name="fluidedmana" multiplier="1.0"/>
+            <outputfluid name="growth"/>
+    </fermenting>
+    </recipe>
+        <recipe name="exred" required="true">
+        <fermenting energy="65536">
+        <inputgroup>
+            <input name="contenttweaker:blood_crystal_up" multiplier="1.0"/>
+        </inputgroup>
+        <inputgroup>
+            <input name="contenttweaker:grow_gem" multiplier="1.75"/>
+            <input name="contenttweaker:hikari_gem" multiplier="1.5"/>
+            <input name="contenttweaker:basic_intergrowth_dust" multiplier="0.5"/>
+            <input name="contenttweaker:middle_intergrowth_dust" multiplier="1.5"/>
+            <input name="contenttweaker:roots_dust" multiplier="0.5"/>
+    </inputgroup>
+            <inputfluid name="redstone" multiplier="0.5"/>
+            <outputfluid name="extremeredliquid"/>
+    </fermenting>
+    </recipe>
+    <recipe name="Soul Binder: Blood Empowered" required="true">
+        <soulbinding energy="520121" levels="12">
+        <input name="contenttweaker:mystical_source" />
+        <soul name="minecraft:witch" />
+        <soul name="enderzoo:witherwitch" />
+        <soul name="enderiozoo:witherwitch" />
+        <output name="contenttweaker:blood_crystal_empowered" />
+        </soulbinding>
+    </recipe>
+    <recipe name="LingGanGu">
+    <slicing energy="114514">
+    <input name="ingotSoularium"/><input name="immersiveengineering:toolupgrade:10"/><input name="
+    ingotSoularium"/>
+    <input name="listAllmushroom"/><input name="contenttweaker:growth_dust"/><input name="listAllmushroom"
+    />
+    <output name="contenttweaker:tomori_controller"/>
+    </slicing>
+    </recipe>
+    <recipe name="YuRi1">
+    <slicing energy="520000">
+    <input name="ingotSoularium"/><input name="contenttweaker:mashiro_block"/><input name="
+    ingotSoularium"/>
+    <input name="dyeOrange"/><input name="contenttweaker:luna_dust"/><input name="dyeOrange"
+    />
+    <output name="contenttweaker:yuri_controller"/>
+    </slicing>
+    </recipe>
+</enderio:recipes>

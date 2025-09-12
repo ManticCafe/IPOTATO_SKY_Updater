@@ -1,0 +1,21 @@
+{
+	x: -9.5d,
+	y: 6.0d,
+	shape: "rsquare",
+	dependencies: [
+		"878ec277"
+	],
+	tasks: [{
+		uid: "58440254",
+		type: "item",
+		items: [{
+			item: "modularmachinery:assembly_machine_mk3_controller"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "329ebd2f",
+		type: "command",
+		command: "/eco give @p 200"
+	}]
+}

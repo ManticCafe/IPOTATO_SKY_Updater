@@ -1,5 +1,0 @@
-{
-  "inventory": {
-    "0:0": "akashictome:tome,1,0,{\"akashictome:data\":{theoneprobe:{Count:1,Damage:0s,tag:{\"akashictome:definedMod\":\"theoneprobe\"},id:\"theoneprobe:probenote\"},tconstruct:{Count:1,Damage:0s,tag:{\"akashictome:definedMod\":\"tconstruct\"},id:\"tconstruct:book\"},mysticalworld:{Count:1,Damage:0s,tag:{\"akashictome:definedMod\":\"mysticalworld\",\"patchouli:book\":\"mysticalworld:world_guide\"},id:\"patchouli:guide_book\"},conarm:{Count:1,Damage:0s,tag:{\"akashictome:definedMod\":\"conarm\"},id:\"conarm:book\"},openblocks:{Count:1,Damage:0s,tag:{\"akashictome:definedMod\":\"openblocks\"},id:\"openblocks:info_book\"},botania:{Count:1,Damage:0s,tag:{\"akashictome:definedMod\":\"botania\"},id:\"botania:lexicon\"},naturesaura:{Count:1,Damage:0s,tag:{\"akashictome:definedMod\":\"naturesaura\",\"patchouli:book\":\"naturesaura:book\"},id:\"patchouli:guide_book\"},totemic:{Count:1,Damage:0s,tag:{\"akashictome:definedMod\":\"totemic\"},id:\"totemic:totempedia\"},valkyrielib:{Count:1,Damage:0s,tag:{\"akashictome:definedMod\":\"valkyrielib\"},id:\"valkyrielib:guide\"}}}"
-  }
-}

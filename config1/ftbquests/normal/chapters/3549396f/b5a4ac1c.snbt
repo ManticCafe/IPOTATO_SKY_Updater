@@ -1,0 +1,14 @@
+{
+	x: -0.5d,
+	y: 4.5d,
+	dependencies: [
+		"a6dabf5c"
+	],
+	tasks: [{
+		uid: "a3d9ad4c",
+		type: "item",
+		items: [{
+			item: "extracells:storage.component 1 8"
+		}]
+	}]
+}

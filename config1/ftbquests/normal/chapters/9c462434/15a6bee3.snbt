@@ -1,0 +1,17 @@
+{
+	x: -15.5d,
+	y: 3.5d,
+	description: "柴堆合成",
+	dependencies: [
+		"0e41f44b"
+	],
+	tasks: [{
+		uid: "c87bf541",
+		type: "item",
+		items: [{
+			item: "bloodmagic:arcane_ashes"
+		}],
+		ignore_damage: 1b,
+		ignore_nbt: 1b
+	}]
+}

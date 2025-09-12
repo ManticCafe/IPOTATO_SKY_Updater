@@ -1,0 +1,14 @@
+{
+	x: -14.5d,
+	y: 0.0d,
+	dependencies: [
+		"344e8755"
+	],
+	tasks: [{
+		uid: "4cb8f322",
+		type: "item",
+		items: [{
+			item: "solarflux:solar_panel_5"
+		}]
+	}]
+}

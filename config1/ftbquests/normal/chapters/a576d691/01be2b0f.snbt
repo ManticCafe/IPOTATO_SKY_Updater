@@ -1,0 +1,27 @@
+{
+	x: -1.5d,
+	y: -15.5d,
+	shape: "rsquare",
+	description: "光之神器！",
+	text: [
+		"用于AE进一步的拓展"
+	],
+	dependencies: [
+		"7873eb5d",
+		"bb694007"
+	],
+	tasks: [{
+		uid: "9f979900",
+		type: "item",
+		items: [{
+			item: "ecoaeextension:efabricator_casing"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "32de6259",
+		type: "item",
+		team_reward: 1b,
+		item: "appliedenergistics2:material 1 38"
+	}]
+}

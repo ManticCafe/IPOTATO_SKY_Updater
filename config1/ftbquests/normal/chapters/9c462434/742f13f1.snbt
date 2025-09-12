@@ -1,0 +1,15 @@
+{
+	x: -2.0d,
+	y: 18.0d,
+	description: "熔融附魔锭与IC的铀混合，反应釜制作",
+	dependencies: [
+		"885dc870"
+	],
+	tasks: [{
+		uid: "2075fbf8",
+		type: "item",
+		items: [{
+			item: "bigreactors:ingotyellorium"
+		}]
+	}]
+}

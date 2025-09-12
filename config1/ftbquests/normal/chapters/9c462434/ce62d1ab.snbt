@@ -1,0 +1,16 @@
+{
+	x: -16.5d,
+	y: 11.0d,
+	description: "世界合成",
+	dependencies: [
+		"0ad5c1f3",
+		"180ff078"
+	],
+	tasks: [{
+		uid: "3edc9233",
+		type: "item",
+		items: [{
+			item: "roots:cloud_berry"
+		}]
+	}]
+}

@@ -1,9 +1,0 @@
-{
-	x: 2.5d,
-	y: -7.5d,
-	tasks: [{
-		uid: "49559764",
-		type: "checkmark",
-		title: "柴堆炼金合成"
-	}]
-}

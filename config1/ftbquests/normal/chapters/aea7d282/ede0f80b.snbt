@@ -1,0 +1,15 @@
+{
+	x: -11.5d,
+	y: 4.5d,
+	description: "第五章中后期就能发展龙研，龙芯当原材料，催化剂待定",
+	dependencies: [
+		"2e89ce04"
+	],
+	tasks: [{
+		uid: "e0c2668a",
+		type: "item",
+		items: [{
+			item: "draconicevolution:draconium_ingot"
+		}]
+	}]
+}

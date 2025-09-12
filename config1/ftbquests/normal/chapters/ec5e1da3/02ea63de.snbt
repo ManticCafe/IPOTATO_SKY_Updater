@@ -1,0 +1,30 @@
+{
+	title: "模块化魔力聚合装置(生产盖亚魂碇，奥利哈钢等)",
+	x: 10.0d,
+	y: 0.0d,
+	dependencies: [
+		"e82e56e1",
+		"1f7ee7ed"
+	],
+	tasks: [{
+		uid: "8d9d8f67",
+		type: "item",
+		items: [{
+			item: "modularmachinery:mana_aggregator_controller"
+		}]
+	}],
+	rewards: [{
+		uid: "9fd20278",
+		type: "command",
+		auto: "invisible",
+		command: "/eco give @p 150"
+	},
+	{
+		uid: "6784794f",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

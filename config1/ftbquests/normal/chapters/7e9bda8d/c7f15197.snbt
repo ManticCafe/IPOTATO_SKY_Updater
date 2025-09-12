@@ -1,0 +1,19 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	dependencies: [
+		"babd2c1c",
+		"12500362",
+		"deffea97",
+		"3ac6dc1e",
+		"0bdff657",
+		"e59b29d3",
+		"3912a60e"
+	],
+	size: 3.0d,
+	tasks: [{
+		uid: "e0bd328d",
+		type: "checkmark",
+		title: "土豆真身"
+	}]
+}

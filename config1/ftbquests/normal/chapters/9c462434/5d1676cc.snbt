@@ -1,0 +1,15 @@
+{
+	x: -12.0d,
+	y: 4.5d,
+	shape: "rsquare",
+	dependencies: [
+		"111b36bc"
+	],
+	tasks: [{
+		uid: "698b9b69",
+		type: "item",
+		items: [{
+			item: "artisanworktables:worktable 1 4"
+		}]
+	}]
+}

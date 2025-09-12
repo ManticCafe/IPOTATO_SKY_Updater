@@ -1,0 +1,75 @@
+{
+	title: "精馏塔",
+	icon: {
+		tag: {
+			multiblock: "IP:DistillationTower"
+		},
+		id: "immersivepetroleum:schematic"
+	},
+	x: 11.0d,
+	y: -9.0d,
+	dependencies: [
+		"00b17ecc"
+	],
+	tasks: [{
+		uid: "2590c1ab",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1 1 1"
+		}],
+		count: 25L
+	},
+	{
+		uid: "c91c594d",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1_slab 1 2"
+		}],
+		count: 30L
+	},
+	{
+		uid: "7062664d",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device1 1 6"
+		}],
+		count: 17L
+	},
+	{
+		uid: "db979e48",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 3"
+		}]
+	},
+	{
+		uid: "a6b133e6",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 5"
+		}],
+		count: 4L
+	},
+	{
+		uid: "5a990595",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:sheetmetal 1 9"
+		}],
+		count: 60L
+	}],
+	rewards: [{
+		uid: "afab0335",
+		type: "command",
+		auto: "invisible",
+		command: "/eco give @p 200"
+	},
+	{
+		uid: "bfd14156",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

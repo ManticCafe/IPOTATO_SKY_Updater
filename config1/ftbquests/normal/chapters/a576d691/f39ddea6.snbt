@@ -1,0 +1,29 @@
+{
+	title: "血之魔法",
+	x: -6.0d,
+	y: -27.5d,
+	description: "工程师工作坊合成",
+	dependencies: [
+		"accad399"
+	],
+	tasks: [{
+		uid: "2126705b",
+		type: "item",
+		items: [{
+			item: "bloodmagic:altar"
+		}]
+	}],
+	rewards: [{
+		uid: "e5d03ff4",
+		type: "command",
+		command: "/eco give @p 150"
+	},
+	{
+		uid: "491ddfc5",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

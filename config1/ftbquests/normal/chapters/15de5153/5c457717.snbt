@@ -1,0 +1,51 @@
+{
+	title: "春之祭",
+	icon: "totemic:cedar_sapling",
+	x: -3.5d,
+	y: 0.0d,
+	description: "利用图腾的仪式获得",
+	text: [
+		"通过春之祭使树苗转换为红柏书树苗",
+		"关于仪式：乐器按百科全书的先后顺序Shift右键激活"
+	],
+	dependencies: [
+		"033b5d73"
+	],
+	tasks: [{
+		uid: "b0589b9f",
+		type: "item",
+		items: [{
+			item: "totemic:flute"
+		}],
+		ignore_damage: 1b,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c52ec764",
+		type: "item",
+		items: [{
+			item: "totemic:drum"
+		}]
+	},
+	{
+		uid: "0992a65c",
+		type: "item",
+		items: [{
+			item: "totemic:cedar_log"
+		}]
+	},
+	{
+		uid: "a153e35a",
+		type: "item",
+		items: [{
+			item: "totemic:jingle_dress"
+		}],
+		ignore_damage: 1b,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "cee020f6",
+		type: "item",
+		item: "totemic:cedar_sapling"
+	}]
+}

@@ -1,0 +1,33 @@
+{
+	title: "高炉",
+	icon: "immersiveengineering:stone_device 1 1",
+	x: 2.0d,
+	y: -2.0d,
+	description: "我嘞个烧钢啊(!)",
+	dependencies: [
+		"94ba898b",
+		"3511846f"
+	],
+	tasks: [{
+		uid: "adc11ff4",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration 1 1"
+		}],
+		count: 27L
+	}],
+	rewards: [{
+		uid: "a8c1c9ee",
+		type: "item",
+		item: "ic2:coke",
+		count: 8
+	},
+	{
+		uid: "ba6251eb",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

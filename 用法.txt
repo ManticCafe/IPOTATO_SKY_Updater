@@ -1,5 +1,5 @@
-1.将需要更新的config/customnpcs/minemenu/resources/scripts放入file文件并在文件名末尾加个1
+1.将需要更新的config、customnpcs、minemenu、resources、scripts放入文件并在文件名末尾加个1
 2.运行pack_folders.py,运行完成会在pack_folders.py同目录生成一个packed_data.c
-3.将packed_data.c移动到main.c同目录并编译可生成更新器exe
+3.编译可生成更新器exe
 
 编译：gcc -o folder_extractor main.c packed_data.c zlib/*.c -Izlib

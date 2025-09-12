@@ -1,0 +1,22 @@
+{
+	x: -8.0d,
+	y: 20.0d,
+	shape: "gear",
+	description: "新世纪的开始",
+	dependencies: [
+		"16ab2cc0"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "bd6ab3d8",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_atomic_reconstructor"
+		}]
+	}],
+	rewards: [{
+		uid: "f5d4e991",
+		type: "command",
+		command: "/eco give @p 500"
+	}]
+}

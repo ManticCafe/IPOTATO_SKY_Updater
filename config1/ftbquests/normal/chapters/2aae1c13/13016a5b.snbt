@@ -1,0 +1,18 @@
+{
+	title: "梦幻科技空岛交流群",
+	icon: "minecraft:paper",
+	x: 0.5d,
+	y: 1.5d,
+	shape: "square",
+	text: [
+		"梦幻科技空岛交流群: 297600477",
+		""
+	],
+	dependencies: [
+		"f178f9d4"
+	],
+	tasks: [{
+		uid: "4042eb69",
+		type: "checkmark"
+	}]
+}

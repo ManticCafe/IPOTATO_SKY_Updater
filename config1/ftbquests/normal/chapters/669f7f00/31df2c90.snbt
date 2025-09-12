@@ -1,0 +1,14 @@
+{
+	x: -1.0d,
+	y: 9.5d,
+	dependencies: [
+		"f5d9cbd9"
+	],
+	tasks: [{
+		uid: "47cdf393",
+		type: "item",
+		items: [{
+			item: "packagedastral:constellation_crafter"
+		}]
+	}]
+}

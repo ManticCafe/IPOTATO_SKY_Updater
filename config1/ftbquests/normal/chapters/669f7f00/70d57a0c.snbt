@@ -1,0 +1,17 @@
+{
+	x: 3.0d,
+	y: -8.5d,
+	text: [
+		"大号的合成存储区&并行处理器"
+	],
+	dependencies: [
+		"ce1c8b3c"
+	],
+	tasks: [{
+		uid: "df0784aa",
+		type: "item",
+		items: [{
+			item: "ecoaeextension:extendable_calculator_subsystem_l4"
+		}]
+	}]
+}

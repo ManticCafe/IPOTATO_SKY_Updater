@@ -1,0 +1,18 @@
+{
+	x: -12.5d,
+	y: 3.0d,
+	dependencies: [
+		"7a72a369"
+	],
+	tasks: [{
+		uid: "f8be6557",
+		type: "item",
+		items: [{
+			tag: {
+				fuzzyMode: "IGNORE_ALL"
+			},
+			id: "extracells:storage.gas.portable"
+		}],
+		ignore_nbt: 1b
+	}]
+}

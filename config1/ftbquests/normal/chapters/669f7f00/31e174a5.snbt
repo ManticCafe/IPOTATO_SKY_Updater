@@ -1,0 +1,18 @@
+{
+	title: "更好、更快、更强",
+	x: 5.0d,
+	y: -8.5d,
+	text: [
+		"更好用的分子装配室，兼容流体装配室样板"
+	],
+	dependencies: [
+		"cb1b46a1"
+	],
+	tasks: [{
+		uid: "b5250276",
+		type: "item",
+		items: [{
+			item: "ecoaeextension:extendable_fabricator_subsystem_l4"
+		}]
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	x: -1.0d,
+	y: -27.5d,
+	dependencies: [
+		"2fd06965"
+	],
+	tasks: [{
+		uid: "7fa7585d",
+		type: "item",
+		items: [{
+			item: "bloodmagic:slate 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "0fc85480",
+		type: "command",
+		command: "/eco give @p 100"
+	},
+	{
+		uid: "121d9cec",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

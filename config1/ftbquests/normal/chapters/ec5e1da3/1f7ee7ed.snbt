@@ -1,0 +1,29 @@
+{
+	x: 10.0d,
+	y: -2.0d,
+	description: "其实是叶绿锭",
+	dependencies: [
+		"e82e56e1"
+	],
+	tasks: [{
+		uid: "7a55d73f",
+		type: "item",
+		items: [{
+			item: "botania:manaresource 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "6b19a99b",
+		type: "item",
+		item: "botania:manaresource 1 4",
+		random_bonus: 3
+	},
+	{
+		uid: "530026d1",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

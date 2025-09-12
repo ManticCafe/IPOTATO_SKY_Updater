@@ -1,0 +1,10 @@
+{
+	x: 5.0d,
+	y: 2.5d,
+	size: 2.0d,
+	tasks: [{
+		uid: "1af32970",
+		type: "checkmark",
+		title: "土豆残躯"
+	}]
+}

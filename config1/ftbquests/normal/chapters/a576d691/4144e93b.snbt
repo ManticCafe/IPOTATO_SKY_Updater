@@ -1,0 +1,30 @@
+{
+	x: -14.0d,
+	y: -23.5d,
+	shape: "rsquare",
+	dependencies: [
+		"847e13fe",
+		"ceb1c7d8",
+		"b3cd1066"
+	],
+	tasks: [{
+		uid: "3b339393",
+		type: "item",
+		items: [{
+			item: "bloodmagic:soul_forge"
+		}]
+	}],
+	rewards: [{
+		uid: "d4a07994",
+		type: "command",
+		command: "/eco give @p 300"
+	},
+	{
+		uid: "72bd5ff8",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

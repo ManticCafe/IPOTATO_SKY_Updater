@@ -1,0 +1,29 @@
+{
+	x: 10.0d,
+	y: -6.0d,
+	description: "''HOP锭''",
+	dependencies: [
+		"706d0520"
+	],
+	tasks: [{
+		uid: "fbe4fd63",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:material 1 19"
+		}]
+	}],
+	rewards: [{
+		uid: "6748eef1",
+		type: "command",
+		auto: "invisible",
+		command: "/eco give @p 66"
+	},
+	{
+		uid: "a5cbf648",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

@@ -1,9 +1,0 @@
-{
-	x: -6.5d,
-	y: -1.0d,
-	tasks: [{
-		uid: "24f5707d",
-		type: "checkmark",
-		title: "六级血之祭坛"
-	}]
-}

@@ -1,0 +1,24 @@
+{
+	x: -12.0d,
+	y: -25.5d,
+	dependencies: [
+		"847e13fe",
+		"cb6d8174",
+		"b3cd1066"
+	],
+	tasks: [{
+		uid: "b30224b7",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:charger"
+		}]
+	}],
+	rewards: [{
+		uid: "1c6339a3",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

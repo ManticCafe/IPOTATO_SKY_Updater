@@ -1,0 +1,14 @@
+{
+	x: -5.0d,
+	y: 3.5d,
+	dependencies: [
+		"8046efc8"
+	],
+	tasks: [{
+		uid: "49b5ff43",
+		type: "item",
+		items: [{
+			item: "packagedexcrafting:combination_crafter"
+		}]
+	}]
+}

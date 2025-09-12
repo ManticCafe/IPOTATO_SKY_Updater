@@ -1,7 +1,0 @@
-{
-	title: "最终物品",
-	icon: "botania_tweaks:compressed_tiny_potato_8",
-	always_invisible: 1b,
-	group: 0,
-	default_quest_shape: ""
-}

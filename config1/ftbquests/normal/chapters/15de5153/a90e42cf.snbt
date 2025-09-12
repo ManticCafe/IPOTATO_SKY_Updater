@@ -1,0 +1,21 @@
+{
+	x: -3.5d,
+	y: 2.0d,
+	description: "'新生'",
+	dependencies: [
+		"5c457717"
+	],
+	tasks: [{
+		uid: "587cc675",
+		type: "item",
+		items: [{
+			item: "naturesaura:gold_fiber"
+		}]
+	}],
+	rewards: [{
+		uid: "2e18df9b",
+		type: "item",
+		item: "naturesaura:gold_fiber",
+		count: 16
+	}]
+}

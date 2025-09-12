@@ -1,0 +1,25 @@
+{
+	x: 2.5d,
+	y: 0.0d,
+	description: "灌注的脉动",
+	text: [
+		"有自动搭建哦！"
+	],
+	dependencies: [
+		"7ccccf89",
+		"a6d74de2"
+	],
+	tasks: [{
+		uid: "6c5f3130",
+		type: "item",
+		items: [{
+			item: "naturesaura:nature_altar"
+		}]
+	}],
+	rewards: [{
+		uid: "82d10afb",
+		type: "command",
+		auto: "invisible",
+		command: "/eco give @p 66"
+	}]
+}

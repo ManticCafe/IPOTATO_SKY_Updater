@@ -1,0 +1,15 @@
+{
+	x: 11.0d,
+	y: -1.5d,
+	description: "与气动工艺相互作用",
+	dependencies: [
+		"1aee64a2"
+	],
+	tasks: [{
+		uid: "30e48b65",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:plastic"
+		}]
+	}]
+}

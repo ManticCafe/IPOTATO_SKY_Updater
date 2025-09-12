@@ -1,0 +1,18 @@
+{
+	icon: "extrabotany:material 1 2",
+	x: 2.0d,
+	y: -1.5d,
+	shape: "square",
+	text: [
+		"Minecraft土豆的世界 1.20.1 多模组冒险服务器",
+		"QQ交流群：100949741"
+	],
+	dependencies: [
+		"f178f9d4"
+	],
+	tasks: [{
+		uid: "0459097e",
+		type: "checkmark",
+		title: "关于姊妹服"
+	}]
+}

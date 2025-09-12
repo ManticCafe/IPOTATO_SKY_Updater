@@ -1,9 +1,0 @@
-{
-	x: -13.0d,
-	y: -2.0d,
-	tasks: [{
-		uid: "06320f71",
-		type: "checkmark",
-		title: "lazy ae2"
-	}]
-}

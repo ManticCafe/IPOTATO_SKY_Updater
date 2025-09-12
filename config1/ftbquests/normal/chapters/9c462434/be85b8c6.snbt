@@ -1,0 +1,17 @@
+{
+	title: "更进一步！实用拓展！！",
+	x: 0.0d,
+	y: 9.5d,
+	shape: "gear",
+	description: "通过四级祭坛合成，五级便可以简化",
+	dependencies: [
+		"f0400798"
+	],
+	tasks: [{
+		uid: "6d069e57",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_misc 1 5"
+		}]
+	}]
+}

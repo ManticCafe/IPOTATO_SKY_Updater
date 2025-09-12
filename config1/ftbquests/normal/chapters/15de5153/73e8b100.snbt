@@ -1,0 +1,20 @@
+{
+	x: -5.5d,
+	y: 2.0d,
+	description: "'你懂魔法吗？'",
+	dependencies: [
+		"a90e42cf"
+	],
+	tasks: [{
+		uid: "da321734",
+		type: "item",
+		items: [{
+			tag: {
+				"patchouli:book": "naturesaura:book"
+			},
+			id: "patchouli:guide_book"
+		}],
+		ignore_damage: 1b,
+		ignore_nbt: 1b
+	}]
+}

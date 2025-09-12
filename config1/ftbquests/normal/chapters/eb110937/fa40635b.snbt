@@ -1,0 +1,11 @@
+{
+	x: 0.5d,
+	y: -0.5d,
+	tasks: [{
+		uid: "2e494cef",
+		type: "item",
+		items: [{
+			item: "threng:big_assembler 1 2"
+		}]
+	}]
+}

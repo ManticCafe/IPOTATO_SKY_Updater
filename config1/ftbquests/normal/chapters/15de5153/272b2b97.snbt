@@ -1,0 +1,24 @@
+{
+	title: "使用圆石进行交易兑换石种子！",
+	icon: "mysticalagriculture:stone_seeds",
+	x: -3.5d,
+	y: 5.5d,
+	shape: "hexagon",
+	can_repeat: 1b,
+	dependencies: [
+		"74921de2"
+	],
+	tasks: [{
+		uid: "520361ed",
+		type: "item",
+		items: [{
+			item: "extrautils2:compressedcobblestone 1 5"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "81905432",
+		type: "item",
+		item: "mysticalagriculture:stone_seeds"
+	}]
+}

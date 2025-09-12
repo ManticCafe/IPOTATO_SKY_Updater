@@ -1,0 +1,30 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	shape: "square",
+	description: "拓展物",
+	dependencies: [
+		"db3d67cc"
+	],
+	tasks: [{
+		uid: "6b01e947",
+		type: "item",
+		items: [{
+			item: "artisanworktables:worktable 1 6"
+		}]
+	}],
+	rewards: [{
+		uid: "8d8de09b",
+		type: "command",
+		auto: "invisible",
+		command: "/eco give @p 66"
+	},
+	{
+		uid: "3f114daf",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

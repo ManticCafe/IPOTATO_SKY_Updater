@@ -1,7 +1,0 @@
-{
-	title: "欢迎来到土豆梦幻科技空岛",
-	icon: "extrabotany:material 1 2",
-	always_invisible: 0b,
-	group: 0,
-	default_quest_shape: "circle"
-}

@@ -1,0 +1,22 @@
+{
+	x: -1.5d,
+	y: 2.0d,
+	shape: "gear",
+	description: "gold leaf",
+	dependencies: [
+		"a90e42cf"
+	],
+	tasks: [{
+		uid: "f62761dd",
+		type: "item",
+		items: [{
+			item: "naturesaura:gold_leaf"
+		}]
+	}],
+	rewards: [{
+		uid: "592a2af2",
+		type: "item",
+		item: "naturesaura:gold_leaf",
+		count: 16
+	}]
+}

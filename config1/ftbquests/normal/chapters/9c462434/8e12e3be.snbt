@@ -1,0 +1,15 @@
+{
+	x: -4.0d,
+	y: 13.0d,
+	description: "月都人生产的边角料...仅此而已",
+	dependencies: [
+		"ebece44b"
+	],
+	tasks: [{
+		uid: "10efa140",
+		type: "item",
+		items: [{
+			item: "extrautils2:ingredients 1 5"
+		}]
+	}]
+}

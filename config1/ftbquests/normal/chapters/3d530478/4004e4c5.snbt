@@ -1,0 +1,45 @@
+{
+	title: "造石机：模块化造石机",
+	x: 1.5d,
+	y: -3.0d,
+	shape: "octagon",
+	description: "解放双手！",
+	dependencies: [
+		"c677e8f8"
+	],
+	tasks: [{
+		uid: "66eb98dd",
+		type: "item",
+		items: [{
+			item: "modularmachinery:stone_machine_0_controller"
+		}]
+	},
+	{
+		uid: "2205cb5d",
+		type: "item",
+		items: [{
+			Damage: 8s,
+			ForgeCaps: {
+				"modularmachinery:upgrade_cap": {
+					upgrade_mining: {}
+				}
+			},
+			id: "extrautils2:ingredients"
+		}]
+	}],
+	rewards: [{
+		uid: "70a38b61",
+		type: "item",
+		team_reward: 1b,
+		item: {
+			Damage: 8s,
+			ForgeCaps: {
+				"modularmachinery:upgrade_cap": {
+					upgrade_mining: {}
+				}
+			},
+			id: "extrautils2:ingredients"
+		},
+		count: 2
+	}]
+}

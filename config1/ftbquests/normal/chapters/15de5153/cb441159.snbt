@@ -1,0 +1,23 @@
+{
+	x: 0.5d,
+	y: 0.0d,
+	description: "来自上帝的交易",
+	dependencies: [
+		"7ccccf89",
+		"cb7706fa",
+		"03c84e26"
+	],
+	tasks: [{
+		uid: "acad9805",
+		type: "item",
+		items: [{
+			item: "naturesaura:offering_table"
+		}]
+	}],
+	rewards: [{
+		uid: "6217048b",
+		type: "command",
+		auto: "invisible",
+		command: "/eco give @p 66"
+	}]
+}

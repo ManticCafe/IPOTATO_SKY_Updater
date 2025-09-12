@@ -1,0 +1,12 @@
+{
+	title: "产线",
+	icon: {
+		ForgeCaps: {
+			"customnpcs:itemscripteddata": {}
+		},
+		id: "minecraft:hopper"
+	},
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

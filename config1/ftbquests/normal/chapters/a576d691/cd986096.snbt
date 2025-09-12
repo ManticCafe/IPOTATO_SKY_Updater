@@ -1,0 +1,32 @@
+{
+	x: -4.5d,
+	y: -23.0d,
+	shape: "diamond",
+	description: "发电效率已增强3.5x！",
+	dependencies: [
+		"1434b1f5"
+	],
+	tasks: [{
+		uid: "6da91f43",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 22"
+		}]
+	},
+	{
+		uid: "2081093e",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 24"
+		}],
+		count: 6L
+	}],
+	rewards: [{
+		uid: "418c662f",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

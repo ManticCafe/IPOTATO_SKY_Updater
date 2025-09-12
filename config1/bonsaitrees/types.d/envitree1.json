@@ -1,0 +1,25 @@
+{
+  "name": "environmentaltech:tree1",
+  "mod": "environmentaltech",
+  "sapling": {
+    "name": "environmentaltech:kyronite_crystal",
+    "data": 0
+  },
+  "growTimeMultiplier": 0.9,
+  "drops": [
+    {
+      "name": "environmentaltech:litherite_crystal",
+      "data": 0,
+      "type": "CUSTOM",
+      "count": 1,
+      "chance": 0.28
+    },
+    {
+      "name": "environmentaltech:erodium_crystal",
+      "data": 0,
+      "type": "CUSTOM",
+      "count": 1,
+      "chance": 0.18
+    }
+  ]
+}

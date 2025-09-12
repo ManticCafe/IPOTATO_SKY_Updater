@@ -1,0 +1,21 @@
+{
+	x: -16.5d,
+	y: 14.5d,
+	shape: "octagon",
+	description: "无限植物！",
+	dependencies: [
+		"ce62d1ab"
+	],
+	tasks: [{
+		uid: "31943415",
+		type: "item",
+		items: [{
+			item: "environmentaltech:void_botanic_miner_cont_1"
+		}]
+	}],
+	rewards: [{
+		uid: "c4a76470",
+		type: "command",
+		command: "/eco give @p 200"
+	}]
+}

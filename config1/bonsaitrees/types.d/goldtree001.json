@@ -1,0 +1,32 @@
+{
+  "name": "naturesaura:goldtree",
+  "mod": "naturesaura",
+  "sapling": {
+    "name": "naturesaura:infused_iron_block",
+    "data": 0
+  },
+  "growTimeMultiplier": 1.0,
+  "drops": [
+    {
+      "name": "naturesaura:gold_powder",
+      "data": 0,
+      "type": "CUSTOM",
+      "count": 3,
+      "chance": 0.38
+    },
+    {
+      "name": "naturesaura:gold_leaf",
+      "data": 0,
+      "type": "CUSTOM",
+      "count": 1,
+      "chance": 0.7
+    },
+    {
+      "name": "naturesaura:infused_iron",
+      "data": 0,
+      "type": "CUSTOM",
+      "count": 2,
+      "chance": 0.12
+    }
+  ]
+}

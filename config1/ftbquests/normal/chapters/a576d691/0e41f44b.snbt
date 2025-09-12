@@ -1,0 +1,25 @@
+{
+	x: 1.0d,
+	y: -23.0d,
+	shape: "gear",
+	dependencies: [
+		"000ad7ba",
+		"039c3469"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "f9249213",
+		type: "item",
+		items: [{
+			item: "roots:pyre"
+		}]
+	}],
+	rewards: [{
+		uid: "623b673b",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

@@ -1,0 +1,55 @@
+{
+  "type": "naturesaura:goldtree",
+  "version": 2,
+  "ref": {
+    "a": {
+      "name": "naturesaura:infused_iron_block",
+      "meta": 0
+    },
+    "b": {
+      "name": "naturesaura:golden_leaves",
+      "meta": 0
+    },
+    "c": {
+      "name": "naturesaura:golden_leaves",
+      "meta": 1
+    }
+  },
+  "shape": [
+    [
+      "  b  ",
+      "  a  ",
+      "  a  ",
+      "     ",
+      "     "
+    ],
+    [
+      "     ",
+      "     ",
+      "  a  ",
+      "     ",
+      "     "
+    ],
+    [
+      "c b b",
+      "a a a",
+      "aaaaa",
+      "  a  ",
+      "  a  "
+    ],
+    [
+      "     ",
+      "     ",
+      "  a  ",
+      "     ",
+      "     "
+    ],
+    [
+      "  b  ",
+      "  a  ",
+      "  a  ",
+      "     ",
+      "     "
+    ]
+  ]
+}

@@ -38,6 +38,7 @@ void debug_print_hex(const unsigned char* data, int length);
 BOOL Filter;
 
 int main() {
+    system("color 75");
     SetConsoleOutputCP(CP_UTF8);
     int key1,key2,key3;
     

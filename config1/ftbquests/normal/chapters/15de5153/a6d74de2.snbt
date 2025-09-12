@@ -1,0 +1,21 @@
+{
+	x: 2.5d,
+	y: 2.0d,
+	description: "天気がいいから、散歩しましょう！",
+	dependencies: [
+		"7ccccf89"
+	],
+	tasks: [{
+		uid: "e13c0f24",
+		type: "item",
+		items: [{
+			item: "naturesaura:token_joy"
+		}]
+	}],
+	rewards: [{
+		uid: "2751d08e",
+		type: "command",
+		auto: "invisible",
+		command: "/eco give @p 66"
+	}]
+}

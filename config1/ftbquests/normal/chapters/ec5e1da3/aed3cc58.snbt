@@ -1,0 +1,31 @@
+{
+	x: 3.75d,
+	y: -12.0d,
+	shape: "rsquare",
+	hide_dependency_lines: 1b,
+	dependencies: [
+		"1713d583"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "9f861785",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device1 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "3657cada",
+		type: "command",
+		auto: "invisible",
+		command: "/eco give @p 100"
+	},
+	{
+		uid: "b1463cea",
+		type: "command",
+		title: "游戏币x52",
+		icon: "contenttweaker:tt8",
+		auto: "invisible",
+		command: "/eco give @p 52"
+	}]
+}

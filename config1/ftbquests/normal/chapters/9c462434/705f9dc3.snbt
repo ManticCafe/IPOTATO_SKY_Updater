@@ -1,0 +1,15 @@
+{
+	x: -2.0d,
+	y: 16.5d,
+	description: "放置金叶",
+	dependencies: [
+		"f0400798"
+	],
+	tasks: [{
+		uid: "0fc1fda0",
+		type: "item",
+		items: [{
+			item: "roots:moonglow_leaf"
+		}]
+	}]
+}

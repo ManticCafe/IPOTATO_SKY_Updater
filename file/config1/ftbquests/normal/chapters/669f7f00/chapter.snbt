@@ -1,7 +1,0 @@
-{
-	title: "能源应用2",
-	icon: "chisel:futura 1 2",
-	always_invisible: 0b,
-	group: 0,
-	default_quest_shape: ""
-}

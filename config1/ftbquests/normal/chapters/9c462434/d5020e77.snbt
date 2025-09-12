@@ -1,0 +1,19 @@
+{
+	x: -5.0d,
+	y: 12.0d,
+	dependencies: [
+		"0678308f"
+	],
+	tasks: [{
+		uid: "8d7ddf2f",
+		type: "item",
+		items: [{
+			item: "extrautils2:passivegenerator 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "480304aa",
+		type: "command",
+		command: "/eco give @p 120"
+	}]
+}

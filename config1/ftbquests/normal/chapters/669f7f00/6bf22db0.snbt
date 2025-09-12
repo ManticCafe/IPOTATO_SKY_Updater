@@ -1,0 +1,14 @@
+{
+	x: 3.0d,
+	y: -0.5d,
+	dependencies: [
+		"9fc0abe8"
+	],
+	tasks: [{
+		uid: "5b8d260f",
+		type: "item",
+		items: [{
+			item: "ae2fc:ultimate_encoder"
+		}]
+	}]
+}
