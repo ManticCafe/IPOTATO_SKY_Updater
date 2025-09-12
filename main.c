@@ -26,9 +26,11 @@ void normalize_path(char* path);
 unsigned char* decompress_data(const unsigned char* compressed_data, unsigned long compressed_size, unsigned long* decompressed_size);
 void debug_print_hex(const unsigned char* data, int length);
 
+BOOL Filter;
+
 int main() {
     SetConsoleOutputCP(CP_UTF8);
-    int key1, key2;
+    int key1,key2,key3;
     
     if (!is_admin()) {
         printf("请确保以管理员身份运行\n");
@@ -42,6 +44,14 @@ int main() {
     if (key1 == 27) { //ESC
         printf("程序已退出。\n");
         return 0;
+    }
+
+    printf("是否跳过异常文件(推荐跳过):Enter跳过，按下其他键取消跳过\n");
+    key3 = _getch();
+
+    if (key3 != 13) {
+        BOOL* Filter1 = &Filter;
+        *Filter1 = TRUE;
     }
     
     printf("即将更新, 请确保游戏实例已关闭, Enter键继续\n");
@@ -397,13 +407,12 @@ int extract_folder(const char* name, const unsigned char* data, unsigned long si
         unsigned long file_size;
         memcpy(&file_size, decompressed_data + offset, sizeof(file_size));
         offset += sizeof(file_size);
-        
-        // 检查文件大小
-        // if (file_size == 0) {
-        //     printf("  错误: 文件大小为零 (文件 %d: %s)\n", i, filename);
-        //     free(decompressed_data);
-        //     return 0;
-        // }
+            
+        if (file_size == 0 && Filter == TRUE) {
+            printf("  错误: 文件大小为零 (文件 %d: %s)\n", i, filename);
+            free(decompressed_data);
+            return 0;
+        }
         
         if (offset + file_size > decompressed_size) {
             printf("  错误: 文件大小超出数据范围 (文件 %d: %s, 大小=%lu, 剩余数据=%lu)\n", 
