@@ -17,6 +17,15 @@ typedef struct {
 extern FolderData folders[];
 extern int folder_count;
 
+void setColor(int forgCol) {
+    HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hStdOut, forgCol);
+}
+
+void resetColor() {
+    setColor(7);
+}
+
 int delete_directory(const char* path);
 int create_directory(const char* path);
 int write_file(const char* path, const unsigned char* data, unsigned long size);
@@ -33,11 +42,13 @@ int main() {
     int key1,key2,key3;
     
     if (!is_admin()) {
+        setColor(FOREGROUND_RED | FOREGROUND_GREEN);
         printf("请确保以管理员身份运行\n");
         printf("按任意键继续...\n");
         _getch();
     }
     
+    setColor(FOREGROUND_BLUE);
     printf("土豆梦幻科技空岛更新器: Enter键继续, ESC键退出\n");
     key1 = _getch();
     
@@ -45,7 +56,8 @@ int main() {
         printf("程序已退出。\n");
         return 0;
     }
-
+    
+    setColor(FOREGROUND_BLUE);
     printf("是否跳过异常文件(推荐跳过):Enter跳过，按下其他键取消跳过\n");
     key3 = _getch();
 
@@ -54,6 +66,7 @@ int main() {
         *Filter1 = TRUE;
     }
     
+    setColor(FOREGROUND_BLUE);
     printf("即将更新, 请确保游戏实例已关闭, Enter键继续\n");
     key2 = _getch();
     
@@ -61,9 +74,10 @@ int main() {
         printf("操作已取消。\n");
         return 0;
     }
-    
+    setColor(FOREGROUND_BLUE);
     printf("开始释放封装文件\n");
     
+    setColor(FOREGROUND_BLUE);
     printf("开始删除现有文件夹...\n");
     
     const char* target_folders[] = {
@@ -71,19 +85,24 @@ int main() {
     };
     
     for (int i = 0; i < 5; i++) {
+        setColor(FOREGROUND_BLUE);
         printf("删除文件夹: %s\n", target_folders[i]);
         if (delete_directory(target_folders[i])) {
+            setColor(FOREGROUND_BLUE);
             printf("  成功删除 %s\n", target_folders[i]);
         } else {
             DWORD error = GetLastError();
             if (error == ERROR_FILE_NOT_FOUND || error == ERROR_PATH_NOT_FOUND) {
+                setColor(FOREGROUND_RED);
                 printf("  文件夹 %s 不存在，跳过删除\n", target_folders[i]);
             } else {
+                setColor(FOREGROUND_RED);
                 printf("  警告: 无法删除 %s (错误代码: %lu)\n", target_folders[i], error);
             }
         }
     }
     
+    setColor(FOREGROUND_BLUE);
     printf("\n开始释放封装文件夹...\n");
     
     for (int i = 0; i < folder_count; i++) {
@@ -94,18 +113,25 @@ int main() {
             folder_name[len-1] = '\0';
         }
         
+        setColor(FOREGROUND_BLUE);
         printf("释放文件夹: %s (原始名称: %s)\n", folder_name, folders[i].name);
         if (extract_folder(folder_name, folders[i].data, folders[i].size)) {
+            setColor(FOREGROUND_GREEN);
             printf("  成功释放 %s\n", folder_name);
         } else {
+            setColor(FOREGROUND_RED);
             printf("  错误: 无法释放 %s\n", folder_name);
+            setColor(FOREGROUND_BLUE);
             printf("按任意键退出...\n");
             _getch();
             return 1;
         }
     }
     
+    setColor(FOREGROUND_GREEN);
     printf("\n所有文件夹已成功释放!\n");
+
+    setColor(FOREGROUND_GREEN);
     printf("更新完成! 按任意键退出...\n");
     _getch();
     
@@ -241,6 +267,7 @@ int write_file(const char* path, const unsigned char* data, unsigned long size) 
         *last_slash = '\0';
         if (!create_directory(normalized_path)) {
             DWORD error = GetLastError();
+            setColor(FOREGROUND_RED);
             printf("    错误: 无法创建目录 %s (错误代码: %lu)\n", normalized_path, error);
             *last_slash = '\\';
             return 0;
@@ -251,6 +278,7 @@ int write_file(const char* path, const unsigned char* data, unsigned long size) 
     FILE* file = fopen(normalized_path, "wb");
     if (!file) {
         DWORD error = GetLastError();
+        setColor(FOREGROUND_RED);
         printf("    错误: 无法打开文件 %s 进行写入 (错误代码: %lu)\n", normalized_path, error);
         return 0;
     }
@@ -259,6 +287,7 @@ int write_file(const char* path, const unsigned char* data, unsigned long size) 
     fclose(file);
     
     if (written != size) {
+        setColor(FOREGROUND_RED);
         printf("    错误: 文件写入不完整 %s (已写入: %zu, 期望: %lu)\n", 
                normalized_path, written, size);
         return 0;
@@ -280,6 +309,7 @@ unsigned char* decompress_data(const unsigned char* compressed_data, unsigned lo
     unsigned char* buffer = (unsigned char*)malloc(buffer_size);
     
     if (!buffer) {
+        setColor(FOREGROUND_RED);
         printf("  错误: 内存分配失败\n");
         return NULL;
     }
@@ -294,6 +324,7 @@ unsigned char* decompress_data(const unsigned char* compressed_data, unsigned lo
     
     int ret = inflateInit(&stream);
     if (ret != Z_OK) {
+        setColor(FOREGROUND_RED);
         printf("  错误: zlib初始化失败: %d\n", ret);
         free(buffer);
         return NULL;
@@ -307,6 +338,7 @@ unsigned char* decompress_data(const unsigned char* compressed_data, unsigned lo
             unsigned char* new_buffer = (unsigned char*)realloc(buffer, new_size);
             
             if (!new_buffer) {
+                setColor(FOREGROUND_RED);
                 printf("  错误: 内存重新分配失败\n");
                 inflateEnd(&stream);
                 free(buffer);
@@ -318,6 +350,7 @@ unsigned char* decompress_data(const unsigned char* compressed_data, unsigned lo
             stream.avail_out = new_size - stream.total_out;
             buffer_size = new_size;
         } else if (ret != Z_OK && ret != Z_STREAM_END) {
+            setColor(FOREGROUND_RED);
             printf("  错误: 解压缩失败，错误代码: %d\n", ret);
             inflateEnd(&stream);
             free(buffer);
@@ -328,6 +361,7 @@ unsigned char* decompress_data(const unsigned char* compressed_data, unsigned lo
     inflateEnd(&stream);
     *decompressed_size = stream.total_out;
     
+    setColor(FOREGROUND_BLUE);
     printf("  解压缩成功: 压缩大小=%lu, 解压大小=%lu\n", compressed_size, *decompressed_size);
     
     return buffer;
@@ -335,21 +369,25 @@ unsigned char* decompress_data(const unsigned char* compressed_data, unsigned lo
 
 int extract_folder(const char* name, const unsigned char* data, unsigned long size) {
     if (data == NULL || size == 0) {
+        setColor(FOREGROUND_RED);
         printf("  错误: 无效的数据指针或大小\n");
         return 0;
     }
     
+    setColor(FOREGROUND_BLUE);
     printf("  开始处理数据，大小: %lu\n", size);
     
     unsigned long decompressed_size;
     unsigned char* decompressed_data = decompress_data(data, size, &decompressed_size);
     
     if (!decompressed_data) {
+        setColor(FOREGROUND_RED);
         printf("  错误: 数据解压缩失败\n");
         return 0;
     }
     
     if (!create_directory(name)) {
+        setColor(FOREGROUND_RED);
         printf("  错误: 无法创建目录 %s\n", name);
         free(decompressed_data);
         return 0;
@@ -359,6 +397,7 @@ int extract_folder(const char* name, const unsigned char* data, unsigned long si
     unsigned int file_count;
     
     if (offset + sizeof(file_count) > decompressed_size) {
+        setColor(FOREGROUND_RED);
         printf("  错误: 数据不足以读取文件数量 (offset=%lu, size=%lu)\n", 
                offset + sizeof(file_count), decompressed_size);
         free(decompressed_data);
@@ -368,10 +407,12 @@ int extract_folder(const char* name, const unsigned char* data, unsigned long si
     memcpy(&file_count, decompressed_data + offset, sizeof(file_count));
     offset += sizeof(file_count);
     
+    setColor(FOREGROUND_BLUE);
     printf("  包含 %u 个文件\n", file_count);
     
     for (unsigned int i = 0; i < file_count; i++) {
         if (offset + sizeof(unsigned short) > decompressed_size) {
+            setColor(FOREGROUND_RED);
             printf("  错误: 数据不足以读取文件名长度 (文件 %d)\n", i);
             free(decompressed_data);
             return 0;
@@ -382,12 +423,14 @@ int extract_folder(const char* name, const unsigned char* data, unsigned long si
         offset += sizeof(name_length);
         
         if (name_length == 0 || name_length > MAX_PATH - 1) {
+            setColor(FOREGROUND_RED);
             printf("  错误: 文件名长度无效: %u (文件 %d)\n", name_length, i);
             free(decompressed_data);
             return 0;
         }
         
         if (offset + name_length > decompressed_size) {
+            setColor(FOREGROUND_RED);
             printf("  错误: 数据不足以读取文件名 (文件 %d)\n", i);
             free(decompressed_data);
             return 0;
@@ -399,6 +442,7 @@ int extract_folder(const char* name, const unsigned char* data, unsigned long si
         offset += name_length;
         
         if (offset + sizeof(unsigned long) > decompressed_size) {
+            setColor(FOREGROUND_RED);
             printf("  错误: 数据不足以读取文件大小 (文件 %d: %s)\n", i, filename);
             free(decompressed_data);
             return 0;
@@ -409,12 +453,14 @@ int extract_folder(const char* name, const unsigned char* data, unsigned long si
         offset += sizeof(file_size);
             
         if (file_size == 0 && Filter == TRUE) {
+            setColor(FOREGROUND_RED);
             printf("  错误: 文件大小为零 (文件 %d: %s)\n", i, filename);
             free(decompressed_data);
             return 0;
         }
         
         if (offset + file_size > decompressed_size) {
+            setColor(FOREGROUND_RED);
             printf("  错误: 文件大小超出数据范围 (文件 %d: %s, 大小=%lu, 剩余数据=%lu)\n", 
                    i, filename, file_size, decompressed_size - offset);
             free(decompressed_data);
@@ -423,6 +469,7 @@ int extract_folder(const char* name, const unsigned char* data, unsigned long si
         
         unsigned char* file_data = (unsigned char*)malloc(file_size);
         if (file_data == NULL) {
+            setColor(FOREGROUND_RED);
             printf("  错误: 内存分配失败 (文件 %d: %s)\n", i, filename);
             free(decompressed_data);
             return 0;
@@ -435,8 +482,10 @@ int extract_folder(const char* name, const unsigned char* data, unsigned long si
         normalize_path(full_path);
         
         if (write_file(full_path, file_data, file_size)) {
+            setColor(FOREGROUND_BLUE);
             printf("    已创建: %s (%lu 字节)\n", filename, file_size);
         } else {
+            setColor(FOREGROUND_RED);
             printf("    错误: 无法创建文件 %s\n", filename);
             free(file_data);
             free(decompressed_data);
