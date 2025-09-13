@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <time.h>
+#include <stdbool.h>
 
 #ifdef _WIN32
     #include <windows.h>
@@ -11,6 +12,19 @@
     #include <unistd.h>
     #define SLEEP_MS(ms) usleep(ms * 1000)
 #endif
+
+//比较文件大小
+bool file_size(long size,const char *filepath) {
+    struct stat file_stat;
+    if (stat(filepath, &file_stat) != 0) {
+        return false;
+    }
+    if (S_ISREG(file_stat.st_mode) && file_stat.st_size > size) {
+        return true;
+    }
+    return false;
+}
+
 
 // 显示动态省略号（一个点）
 void animate_single_dot(int duration_ms) {
