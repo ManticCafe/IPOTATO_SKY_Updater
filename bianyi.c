@@ -61,8 +61,8 @@ int main() {
 
         case 49 :
             const char *filename = "packed_data.c";
-            printf("更新文件正在编译中...\n");
-            // animate_triple_dots(6000);
+            printf("更新文件正在编译中\n");
+            animate_ellipsis(6000);
             system("python pack_folders.py");    
             if (filesize(filename)) {
                 printf("编译完成\n");
@@ -72,8 +72,8 @@ int main() {
 
         case 50 :
             const char *filename1 = "folder_extractor.exe";
-            printf("正在编译程序中...\n");
-            // animate_ellipsis(6000);
+            printf("正在编译程序中\n");
+            animate_ellipsis(6000);
             system("gcc -o folder_extractor main.c packed_data.c zlib/*.c -Izlib");
             if (filesize0(filename1)) {
                 printf("编译成功\n");
