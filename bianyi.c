@@ -5,6 +5,7 @@
 #include <sys/stat.h>
 #include <errno.h>
 #include <stdbool.h>
+#include <conio.h>
 #include "mine_lib/mine.h"
 
 #ifdef _WIN32
@@ -44,19 +45,24 @@ bool filesize0(const char *filepath) {
 }
 
 int main() {
-    system("color 75");
+    int key;
+
+    system("color a");
     SetConsoleOutputCP(CP_UTF8);
     while ( 1 ) {
-        int num;
-        printf("土豆梦幻科技安装更新器制作助手:请先输入1编译file文件后再输入2编译安装器\n");
-        printf("输入1将file中的文件进行编译,输入2将文件编译成更新安装器,输入3退出:\n");
-        scanf("%d",&num);
-        switch (num) {
+        int key;
+        printf("=============================================================================\n");
+        printf("土豆梦幻科技安装更新器制作助手:请先按下[1]编译file文件后再按下[2]编译安装器\n");
+        printf("1.按下[1]将file中的文件进行编译\n2.按下[2]将文件编译成更新安装器\n3.按下[3]退出该程序\n");
+        printf("=============================================================================\n");
+        // scanf("%d",&num);
+        key = _getch();
+        switch (key) {
 
-        case 1 :
+        case 49 :
             const char *filename = "packed_data.c";
             printf("更新文件正在编译中\n");
-            animate_triple_dots(3000);
+            animate_triple_dots(6000);
             system("python pack_folders.py");    
             if (filesize(filename)) {
                 printf("编译完成\n");
@@ -64,10 +70,10 @@ int main() {
             }
         break;
 
-        case 2 :
+        case 50 :
             const char *filename1 = "folder_extractor.exe";
             printf("正在编译程序\n");
-            animate_ellipsis(3000);
+            animate_ellipsis(6000);
             system("gcc -o folder_extractor main.c packed_data.c zlib/*.c -Izlib");
             if (filesize0(filename1)) {
                 printf("编译成功\n");
@@ -75,7 +81,7 @@ int main() {
             }
         break;
 
-        case 3 :
+        case 51 :
             return 0;
         break;
 

@@ -38,7 +38,6 @@ void debug_print_hex(const unsigned char* data, int length);
 BOOL Filter;
 
 int main() {
-    system("color 75");
     SetConsoleOutputCP(CP_UTF8);
     int key1,key2,key3;
     
@@ -49,7 +48,7 @@ int main() {
         _getch();
     }
     
-    setColor(FOREGROUND_BLUE);
+    setColor(FOREGROUND_RED | FOREGROUND_GREEN);
     printf("土豆梦幻科技空岛更新器: Enter键继续, ESC键退出\n");
     key1 = _getch();
     
@@ -58,7 +57,7 @@ int main() {
         return 0;
     }
     
-    setColor(FOREGROUND_BLUE);
+    setColor(FOREGROUND_RED | FOREGROUND_GREEN);
     printf("是否跳过异常文件(推荐跳过):Enter跳过，按下其他键取消跳过\n");
     key3 = _getch();
 
@@ -67,7 +66,7 @@ int main() {
         *Filter1 = TRUE;
     }
     
-    setColor(FOREGROUND_BLUE);
+    setColor(FOREGROUND_RED | FOREGROUND_GREEN);
     printf("即将更新, 请确保游戏实例已关闭, Enter键继续\n");
     key2 = _getch();
     
@@ -75,10 +74,10 @@ int main() {
         printf("操作已取消。\n");
         return 0;
     }
-    setColor(FOREGROUND_BLUE);
+    setColor(FOREGROUND_RED | FOREGROUND_GREEN);
     printf("开始释放封装文件\n");
     
-    setColor(FOREGROUND_BLUE);
+    setColor(FOREGROUND_RED | FOREGROUND_GREEN);
     printf("开始删除现有文件夹...\n");
     
     const char* target_folders[] = {
@@ -86,10 +85,10 @@ int main() {
     };
     
     for (int i = 0; i < 5; i++) {
-        setColor(FOREGROUND_BLUE);
+        setColor(FOREGROUND_RED | FOREGROUND_GREEN);
         printf("删除文件夹: %s\n", target_folders[i]);
         if (delete_directory(target_folders[i])) {
-            setColor(FOREGROUND_BLUE);
+            setColor(FOREGROUND_RED | FOREGROUND_GREEN);
             printf("  成功删除 %s\n", target_folders[i]);
         } else {
             DWORD error = GetLastError();
@@ -103,7 +102,7 @@ int main() {
         }
     }
     
-    setColor(FOREGROUND_BLUE);
+    setColor(FOREGROUND_RED | FOREGROUND_GREEN);
     printf("\n开始释放封装文件夹...\n");
     
     for (int i = 0; i < folder_count; i++) {
@@ -114,15 +113,15 @@ int main() {
             folder_name[len-1] = '\0';
         }
         
-        setColor(FOREGROUND_BLUE);
+        setColor(FOREGROUND_RED | FOREGROUND_GREEN);
         printf("释放文件夹: %s (原始名称: %s)\n", folder_name, folders[i].name);
         if (extract_folder(folder_name, folders[i].data, folders[i].size)) {
             setColor(FOREGROUND_GREEN);
             printf("  成功释放 %s\n", folder_name);
         } else {
-            setColor(FOREGROUND_RED);
+            setColor(FOREGROUND_RED | FOREGROUND_GREEN);
             printf("  错误: 无法释放 %s\n", folder_name);
-            setColor(FOREGROUND_BLUE);
+            setColor(FOREGROUND_RED | FOREGROUND_GREEN);
             printf("按任意键退出...\n");
             _getch();
             return 1;
@@ -362,7 +361,7 @@ unsigned char* decompress_data(const unsigned char* compressed_data, unsigned lo
     inflateEnd(&stream);
     *decompressed_size = stream.total_out;
     
-    setColor(FOREGROUND_BLUE);
+    setColor(FOREGROUND_RED | FOREGROUND_GREEN);
     printf("  解压缩成功: 压缩大小=%lu, 解压大小=%lu\n", compressed_size, *decompressed_size);
     
     return buffer;
@@ -375,7 +374,7 @@ int extract_folder(const char* name, const unsigned char* data, unsigned long si
         return 0;
     }
     
-    setColor(FOREGROUND_BLUE);
+    setColor(FOREGROUND_RED | FOREGROUND_GREEN);
     printf("  开始处理数据，大小: %lu\n", size);
     
     unsigned long decompressed_size;
@@ -408,7 +407,7 @@ int extract_folder(const char* name, const unsigned char* data, unsigned long si
     memcpy(&file_count, decompressed_data + offset, sizeof(file_count));
     offset += sizeof(file_count);
     
-    setColor(FOREGROUND_BLUE);
+    setColor(FOREGROUND_RED | FOREGROUND_GREEN);
     printf("  包含 %u 个文件\n", file_count);
     
     for (unsigned int i = 0; i < file_count; i++) {
@@ -483,7 +482,7 @@ int extract_folder(const char* name, const unsigned char* data, unsigned long si
         normalize_path(full_path);
         
         if (write_file(full_path, file_data, file_size)) {
-            setColor(FOREGROUND_BLUE);
+            setColor(FOREGROUND_RED | FOREGROUND_GREEN);
             printf("    已创建: %s (%lu 字节)\n", filename, file_size);
         } else {
             setColor(FOREGROUND_RED);
